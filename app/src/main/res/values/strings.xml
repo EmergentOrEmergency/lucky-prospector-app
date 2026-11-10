@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name" translatable="false">Lucky Prospector</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_findings">Findings</string>
+    <string name="nav_map">Map</string>
+    <string name="nav_profile">Profile</string>
+    <string name="language_button">Language: %1$s</string>
+    <string name="language_dialog_title">App language</string>
+    <string name="language_system">Device language</string>
+    <string name="language_english">English</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_french">Français</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_spanish">Español</string>
+    <string name="close">Close</string>
+    <string name="profile_title">Your lucky journal</string>
+    <string name="profile_description">Search and save without an account. Sign in only to see and publish on the shared map, or to send a suggestion.</string>
+    <string name="profile_privacy">Sharing is anonymous: wishes and precise locations never leave your device. A photo is shared only if you choose so, cropped around the clovers and without GPS data.</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="signing_in">Signing in…</string>
+    <string name="account_connected">Connected account</string>
+    <string name="sign_out">Sign out</string>
+    <string name="error_sign_in">Sign-in failed. Try again.</string>
+    <string name="error_sign_out">Sign-out failed. Try again.</string>
+    <string name="gallery_empty_title">Luck leaves traces</string>
+    <string name="gallery_empty_description">Point the camera at a clover patch and save every discovery here. Photos and wishes remain available offline.</string>
+    <string name="private_by_default">Private by default</string>
+    <string name="start_search">Start searching</string>
+    <string name="gallery_title">Your lucky journal</string>
+    <plurals name="finding_count"><item quantity="one">%1$d finding kept on this device</item><item quantity="other">%1$d findings kept on this device</item></plurals>
+    <string name="wish_prefix">Wish: %1$s</string>
+    <string name="corrected_prefix">Corrected: %1$s</string>
+    <string name="type_four_leaf_clover">Four-leaf clover</string>
+    <string name="type_clover_patch">Clover patch</string>
+    <string name="sync_local_only">On this device only</string>
+    <string name="sync_pending">Waiting to sync</string>
+    <string name="sync_synced">Synced</string>
+    <string name="sync_failed">Sync error</string>
+    <string name="wish_optional">Your wish (optional)</string>
+    <string name="classification">Classification</string>
+    <string name="shared_map">Shared map</string>
+    <string name="sharing_privacy_detail">The type recognised by the classifier and an area rounded to about 150 m will be shared, plus, if you choose, a crop of the photo without GPS data. Wishes, identity and precise coordinates stay on your device.</string>
+    <string name="finding_without_location">This finding has no location and cannot be shared.</string>
+    <string name="sign_in_to_share">Sign in to share</string>
+    <string name="sharing_private">Private</string>
+    <string name="sharing_pending">Publishing…</string>
+    <string name="sharing_anonymous">Shared anonymously</string>
+    <string name="sharing_failed">Publishing failed</string>
+    <string name="error_operation">Operation failed. Try again.</string><string name="error_publish_limit">You have shared the maximum number of findings for today. Try again tomorrow.</string>
+    <string name="error_save">Could not save. Check your connection and try again.</string>
+    <string name="saving">Saving…</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="back">Back</string>
+    <string name="map_private_title">Your lucky map</string>
+    <string name="map_shared_title">Shared map</string>
+    <string name="map_private_subtitle">Every point remains available even when you are offline.</string>
+    <string name="map_shared_subtitle">Anonymous areas reported by the community, never precise locations.</string>
+    <string name="map_tab_mine">Mine</string>
+    <string name="map_tab_shared">Shared</string>
+    <plurals name="clover_count"><item quantity="one">%1$d clover</item><item quantity="other">%1$d clovers</item></plurals>
+    <plurals name="patch_count"><item quantity="one">%1$d patch</item><item quantity="other">%1$d patches</item></plurals>
+    <plurals name="confirmation_count"><item quantity="one">%1$d confirmation</item><item quantity="other">%1$d confirmations</item></plurals>
+    <string name="map_local_name">Local map</string>
+    <string name="map_offline_note">Schematic background • no data usage</string>
+    <string name="map_gesture_hint">Pinch to zoom • drag to move • double-tap to reset</string>
+    <string name="map_zoom_in">Zoom in</string><string name="map_zoom_out">Zoom out</string><string name="map_zoom_reset">Reset zoom</string>
+    <string name="map_filter_content_description">Filter findings</string>
+    <string name="map_sign_in_title">Discover lucky areas</string>
+    <string name="map_sign_in_description">Sign in only to read and contribute to the anonymous map. Your private map remains available without an account.</string>
+    <string name="sign_in_continue">Sign in to continue</string>
+    <string name="error_shared_map">The shared map is unavailable. Check your connection and try again.</string>
+    <string name="map_no_recent_pins">No recent pins</string>
+    <string name="map_first_shared_pin">Share a finding to start the map.</string>
+    <string name="map_zone_summary">Approx. %1$d m area • %2$s</string>
+    <string name="map_published_by_you">Published by you</string>
+    <string name="map_already_confirmed">You already confirmed this pin</string>
+    <string name="map_confirming">Confirming…</string>
+    <string name="map_confirm_still_there">Confirm it is still there</string>
+    <string name="map_privacy_note">Anonymous, rounded pins. Photos are crops without GPS data; wishes and identities are never shown.</string>
+    <string name="map_private_accessibility">Offline map with %1$d four-leaf clovers and %2$d clover patches. Tap a point to open it.</string>
+    <string name="map_shared_accessibility">Anonymous shared map with %1$d areas, %2$d recent. Tap a point for details.</string>
+    <string name="shared_type_four_leaf">Four-leaf clover area</string>
+    <string name="freshness_fresh">Recent</string>
+    <string name="freshness_fading">Needs reconfirmation</string>
+    <string name="freshness_stale">Old</string>
+    <string name="map_empty_title">The map is waiting for its first finding</string>
+    <string name="map_empty_description">Search for a patch or four-leaf clover: the precise location stays on your device.</string>
+    <string name="camera_preparing">Getting the camera ready…</string>
+    <string name="camera_hint_more_light">Find a little more light</string>
+    <string name="camera_hint_hold_still">Hold the phone steady</string>
+    <string name="search_four_leaf_possible">Possible four-leaf clover. Move closer and hold steady.</string>
+    <string name="search_four_leaf_confirmed">Possible four-leaf clover · stable detection</string><string name="search_four_leaf_confirmed_many">%1$d possible four-leaf clovers · stable detections</string>
+    <string name="search_clover_patch">You are in the right place. Keep looking.</string>
+    <string name="search_ai_on_device">On-device AI search</string>
+    <string name="search_demo_mode">Demo mode</string>
+    <string name="search_model_unavailable">Model unavailable: demo mode</string>
+    <string name="search_taking_photo">Taking photo…</string>
+    <string name="search_save_finding">Save discovery</string>
+    <string name="location_dialog_title">Save the location?</string>
+    <string name="location_dialog_text">The location places the finding on your map and stays on this device. You can continue without granting access. On older Android versions, photo access is also needed to copy the image to the gallery.</string>
+    <string name="allow">Allow</string>
+    <string name="continue_without">Continue without it</string>
+    <string name="error_photo">Could not take the photo. Try again.</string>
+    <string name="confirm_finding">Confirm finding</string>
+    <string name="type_patch_short">Patch</string>
+    <string name="wish_short_optional">Wish (optional)</string>
+    <string name="location_private_note">The location is saved only on this device.</string>
+    <string name="confirm">Confirm</string>
+    <string name="cancel">Cancel</string>
+    <string name="camera_permission_description">The camera is used to search for four-leaf clovers in real time.</string>
+    <string name="camera_permission_button">Allow camera</string>
+    <string name="error_shared_map_update">Could not update the shared map.</string>
+    <string name="error_confirmation">Confirmation failed or was already sent from this account.</string>
+    <string-array name="search_encouragements">
+        <item>Keep looking… luck hides among the leaves.</item><item>Carry on: the next one might be the lucky one.</item><item>Take your time, leaf by leaf.</item><item>Luck favors those who keep searching.</item><item>Move closer and slowly change the angle.</item>
+    </string-array>
+    <string name="map_online_name">Map with cities and streets</string>
+    <string name="map_online_note">An internet connection is required</string>
+    <string name="map_online_privacy_note">The map provider can know which area you are viewing, but cannot see your findings or personal information.</string>
+    <string name="map_no_private_pins_overlay">No saved places yet — you can still explore the map</string>
+    <string name="map_shared_date">Source date: %1$s</string>
+    <string name="map_report_pin">Report as unsuitable</string>
+    <string name="map_report_title">Why is this pin unsuitable?</string>
+    <string name="map_report_explanation">Choose the reason. If the place simply no longer exists, use “It\'s not there any more” instead.</string>
+    <string name="map_report_not_relevant">Not about clovers or a clover patch</string>
+    <string name="map_report_false_information">False or misleading information</string>
+    <string name="map_report_offensive">Spam or offensive content</string>
+    <string name="map_reporting">Sending report…</string>
+    <string name="map_report_sent">Report sent</string>
+    <string name="error_report">The report could not be sent. Check the connection and try again.</string>
+    <string name="map_mark_gone">It\'s not there any more</string>
+    <string name="map_marking_gone">Sending…</string>
+    <string name="map_gone_sent">You reported that it\'s no longer there</string>
+    <string name="map_gone_title">Is it gone?</string>
+    <string name="map_gone_explanation">Use this if the meadow or the clovers are no longer there. When two different people report it, the pin disappears from the map. Nobody can see who reported it.</string>
+    <string name="map_gone_confirm">Yes, it\'s gone</string>
+    <string name="map_gone_one">One person says it\'s no longer there.</string>
+    <string name="error_mark_gone">The report could not be sent. Check the connection and try again.</string>
+    <string name="share_checking">Checking the photo…</string>
+    <string name="share_review_title">Check what you share</string>
+    <string name="share_review_type">On the shared map: %1$s</string>
+    <string name="share_downgraded">The classifier does not recognise a four-leaf clover in this photo, so it will appear as a clover patch. Your own label stays as it is.</string>
+    <string name="share_review_text">Only this crop around the clovers is published, without GPS coordinates or any other photo data. Make sure no houses, number plates, people or recognisable places are visible.</string>
+    <string name="share_with_photo">Share with photo</string>
+    <string name="share_without_photo">Share without photo</string>
+    <string name="error_share_no_clover">The classifier sees no clovers in this photo, so it cannot be shared.</string>
+    <string name="error_share_model_unavailable">The classifier is not available, so sharing is not possible right now.</string>
+    <string name="error_share_photo_unreadable">The photo could not be read.</string>
+    <string name="error_type_not_confirmed">Saved. On the shared map it stays a clover patch: the classifier does not see a four-leaf clover in this photo.</string>
+    <string name="feedback_button">Send a suggestion</string>
+    <string name="feedback_title">Help us improve</string>
+    <string name="feedback_idea">Idea</string>
+    <string name="feedback_problem">Problem</string>
+    <string name="feedback_detection">Wrong detection</string>
+    <string name="feedback_question_idea">What did you miss today? What would you like the app to do?</string>
+    <string name="feedback_question_problem">What happened, and what did you expect instead?</string>
+    <string name="feedback_question_detection">What did it get wrong? A four-leaf clover missed, a three-leaf one taken for four, something else?</string>
+    <string name="feedback_contact">Contact for a reply (optional)</string>
+    <string name="feedback_privacy">Your message reaches the team without your name. Your account is used only to limit spam. Leave a contact only if you want an answer.</string>
+    <string name="feedback_send">Send</string>
+    <string name="feedback_sending">Sending…</string>
+    <string name="feedback_thanks_title">Thank you!</string>
+    <string name="feedback_thanks">We read every message. Ideas like yours decide what we build next.</string>
+    <string name="feedback_sign_in">Sign in to send a suggestion: it keeps the inbox free of spam. Your name is not attached to the message.</string>
+    <string name="feedback_limit">You have sent the maximum number of messages for today. Try again tomorrow.</string>
+    <string name="error_feedback">The message could not be sent. Check the connection and try again.</string>
+    <string name="captured_photo_description">The photo that will be saved</string>
+    <string name="info_button">Info and privacy</string>
+    <string name="info_title">Info and privacy</string>
+    <string name="info_privacy_title">Privacy in brief</string>
+    <string name="info_privacy_summary">The camera image is analysed on your phone and never uploaded. Photos, wishes and precise locations stay on this device; each photo is also saved to your gallery. You can search and save without an account. Only when you choose to share a finding, the shared map receives its type, an area rounded to about 150 m and, if you choose, a crop of the photo without GPS data. Other users never see who published it; the project administrator can link a pin to its account. No ads, no analytics. You can withdraw what you shared, or delete your account, at any time.</string>
+    <string name="info_privacy_full">Read the full privacy policy</string>
+    <string name="info_contacts_title">Contact</string>
+    <string name="info_contacts_text">Ideas, problems or a clover the app got wrong: tell us, we read every message.</string>
+    <string name="info_contact_email">Write to %1$s</string>
+    <string name="info_licenses_title">Licences and credits</string>
+    <string name="info_version">Version %1$s</string>
+    <string name="delete_account_title">Delete account and data</string>
+    <string name="delete_account_text">Removes every finding you shared from the shared map, photos included, takes back your confirmations and reports, and deletes your account. Findings saved on this phone stay here.</string>
+    <string name="delete_account_button">Delete account</string>
+    <string name="delete_account_confirm_text">This cannot be undone. Your shared pins and their photos will be removed and your account deleted. You may be asked to choose your Google account again to confirm.</string>
+    <string name="delete_account_confirm">Delete permanently</string>
+    <string name="deleting_account">Deleting…</string>
+    <string name="error_delete_account">The account could not be deleted. Check the connection and try again.</string>
+    <string name="account_deleted">Your account and shared findings have been deleted. Findings saved on this phone are still here.</string>
+    <string name="privacy_policy_url" translatable="false">https://emergentoremergency.github.io/lucky-prospector/</string>
+    <string name="support_email" translatable="false">intervistaconleai@gmail.com</string>
+    <string name="did_you_know">Did you know?</string>
+    <string name="another_fact">Another one</string>
+    <string name="preserve_button">How to preserve it</string>
+    <string name="preserve_title">Preserving your four-leaf clover</string>
+    <string name="preserve_tips_title">Tips</string>
+    <string-array name="clover_facts">
+        <item>In a count of about 5.7 million clovers across six European countries, roughly 1 in 5,000 had four leaves — twice as common as the famous “1 in 10,000”.</item>
+        <item>A four-leaf clover isn\'t a separate species: it is usually a white clover (Trifolium repens) that grew an extra leaflet.</item>
+        <item>In 2010 researchers at the University of Georgia located the gene linked to four leaves. It is masked by the three-leaf gene, and light and temperature decide whether the fourth leaf appears.</item>
+        <item>One of the earliest written mentions dates from 1620: John Melton wrote that whoever finds “four-leaved grass” in the fields will soon find “some good thing”.</item>
+        <item>The Irish shamrock has three leaves, not four. Surveys in 1893 and 1988 found no single “true” shamrock species: people picked mostly lesser clover and white clover.</item>
+        <item>Tradition says St Patrick used the three-leaf shamrock to explain the Trinity — but the story first appears in writing only in 1726, more than a thousand years later.</item>
+        <item>By tradition, the four leaves stand for faith, hope, love and luck.</item>
+        <item>According to a legend, Eve took a four-leaf clover with her when she left the Garden of Eden, as a keepsake of Paradise.</item>
+        <item>In British and Irish folklore, carrying a four-leaf clover lets you see fairies and see through their tricks.</item>
+        <item>In Germany people give “Glücksklee” at New Year. It isn\'t a true clover but Oxalis tetraphylla, a plant whose leaves always have four lobes.</item>
+        <item>The Guinness record for the most leaves on a single clover is 63, set by Yoshiharu Watanabe in Japan in 2023.</item>
+        <item>In Japanese, white clover is called “shirotsumekusa”, “white packing grass”: in the Edo period, dried clover cushioned Dutch glassware shipped to Nagasaki.</item>
+    </string-array>
+    <string-array name="preserve_steps">
+        <item>Press it as soon as possible, within a few hours. Until then keep it flat inside folded paper, not in a pocket.</item>
+        <item>If it is damp with dew or rain, blot it gently dry.</item>
+        <item>Spread the leaflets flat between two sheets of absorbent paper (blotting paper, a coffee filter or baking paper). Keep it off the book pages: ink and acidic paper can stain it.</item>
+        <item>Close it in the middle of a heavy book and add more weight on top. A flower press is even better.</item>
+        <item>Change the absorbent paper every day for the first few days, then every few days, to prevent mould and browning.</item>
+        <item>Leave it pressed somewhere dry for 1–3 weeks, until it is completely dry and stiff.</item>
+        <item>Protect it only once it is fully dry: laminate it, frame it under glass or keep it in a clear sleeve.</item>
+    </string-array>
+    <string-array name="preserve_tips">
+        <item>Keep it out of direct sunlight: the green fades with time whatever you do, but light makes it faster. Lamination keeps the colour best.</item>
+        <item>Seal it only when completely dry, or it will cloud under the plastic or glass.</item>
+        <item>The quick microwave method exists, but it overheats easily and a book in the microwave is risky: the slow press is safer.</item>
+    </string-array>
+    <string name="settings_title">Settings</string>
+    <string name="settings_find_title">When you find a four-leaf clover</string>
+    <string name="settings_sound">Sound</string>
+    <string name="settings_sound_hint">A short chime. It follows the phone\'s media volume.</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_vibration_hint">A brief vibration, so you notice even with the sound off.</string>
+    <string name="settings_sensitivity_title">Search sensitivity</string>
+    <string name="settings_sensitivity_intro">How sure the app must be before it announces a four-leaf clover. Every clover is always shown as a faint square.</string>
+    <string name="sensitivity_careful">Careful</string>
+    <string name="sensitivity_careful_hint">Fewer false alarms: it takes a little longer and may miss a clover.</string>
+    <string name="sensitivity_normal">Normal</string>
+    <string name="sensitivity_normal_hint">The recommended balance.</string>
+    <string name="sensitivity_sensitive">Sensitive</string>
+    <string name="sensitivity_sensitive_hint">Finds more, but also announces clovers that turn out to have three leaves.</string>
+    <string name="share_with_friends">Share with friends</string>
+    <string name="share_chooser_title">Share your luck</string>
+    <string name="share_text_four_leaf">I found a four-leaf clover! ☘ Look for your luck too with %1$s: %2$s</string>
+    <string name="share_text_patch">I found a clover patch! ☘ Help me look for luck — install %1$s too: %2$s</string>
+    <string name="share_card_footer">Found with Lucky Prospector</string>
+    <string name="error_share_card">The image could not be prepared.</string>
+    <string-array name="lucky_wishes">
+        <item>May this little leaf bring you a big smile.</item>
+        <item>Luck found you today. Keep it close.</item>
+        <item>Four leaves, four good things coming your way.</item>
+        <item>May your next step be as lucky as this one.</item>
+        <item>A bit of green luck, just for you.</item>
+        <item>May today stay as bright as this find.</item>
+        <item>You looked closely, and luck looked back.</item>
+        <item>May good news find you as easily as you found this.</item>
+        <item>Patience, a keen eye, and a little magic.</item>
+        <item>May this clover remind you that rare things happen.</item>
+        <item>Luck likes those who keep looking.</item>
+        <item>One in thousands — a bit like you.</item>
+        <item>May your wishes grow like clover in spring.</item>
+        <item>A lucky leaf for a lucky day.</item>
+        <item>May this find bring you calm and good company.</item>
+        <item>Keep it in a book, and in your memory.</item>
+        <item>May you always find what you are looking for.</item>
+        <item>Today the meadow chose you.</item>
+        <item>May luck walk beside you on every path.</item>
+        <item>Small leaf, big wish.</item>
+        <item>May this clover carry your wish a little further.</item>
+        <item>Here\'s to more lucky days like this one.</item>
+        <item>May you share this luck with someone you love.</item>
+        <item>Green for hope, four for luck.</item>
+        <item>May the little surprises keep coming.</item>
+        <item>Found by you, wished for everyone.</item>
+        <item>May your heart feel as light as this leaf.</item>
+        <item>Every clover is a small reason to smile.</item>
+        <item>May this be the start of a lucky streak.</item>
+        <item>Luck is quiet. You noticed it.</item>
+    </string-array>
+    <string name="store_url" translatable="false">https://play.google.com/store/apps/details?id=com.luckyprospector.app</string>
+    <string name="add_manually">Add by hand</string>
+    <string name="manual_title">Add a finding</string>
+    <string name="manual_pick_photo">Choose a photo</string>
+    <string name="manual_change_photo">Change photo</string>
+    <string name="manual_date">Date: %1$s</string>
+    <string name="manual_location_title">Where did you find it?</string>
+    <string name="location_from_photo">Position saved in the photo</string>
+    <string name="location_current">My current position</string>
+    <string name="location_address">Search an address or a park</string>
+    <string name="location_none">No position</string>
+    <string name="locating">Finding your position…</string>
+    <string name="address_hint">Address or park name</string>
+    <string name="address_search">Search</string>
+    <string name="address_searching">…</string>
+    <string name="address_no_results">No place found. Try adding the town.</string>
+    <string name="address_privacy">The search goes through the phone\'s location service (usually Google). The position is saved only on this phone.</string>
+    <string name="error_location">Position not available.</string>
+    <string name="expand">Show</string>
+    <string name="collapse">Hide</string>
+    <string name="community_rules_title">Shared map rules</string>
+    <string name="community_rules_accept">I accept the shared map rules</string>
+    <string-array name="community_rules">
+        <item>Only clovers and four-leaf clovers: no people, faces, houses or number plates.</item>
+        <item>No private gardens or places you may not enter.</item>
+        <item>No fake finds, advertising or offensive content.</item>
+        <item>Pins reported by three people are removed.</item>
+    </string-array>
+    <string name="camera_hint_move_closer">Move closer: the clovers look too small</string>
+    <string name="camera_hint_move_back">Step back a little to see more lawn</string>
+    <string name="search_size_guide">Clover size</string>
+    <string name="search_fps">AI: %1$.1f fps</string>
+    <string name="settings_resolution_title">Search resolution</string>
+    <string name="settings_resolution_intro">Choose the camera stream analysed by the AI. The actual resolution and AI frame rate appear during search. The live preview can be smoother. The camera uses the closest supported size.</string>
+    <string name="resolution_standard">Standard</string>
+    <string name="resolution_standard_hint">Less processing and a closer view of the clover.</string>
+    <string name="resolution_high">High</string>
+    <string name="resolution_high_hint">More detail; analysis speed depends on the phone and conditions.</string>
+    <string name="resolution_max">4:3 detail</string>
+    <string name="resolution_max_hint">More pixels than Full HD, in the 4:3 sensor format. Requires more processing.</string>
+    <string name="resolution_full_hd">Full HD</string>
+    <string name="resolution_full_hd_hint">Default · 16:9. A balance between detail and analysis speed.</string>
+    <string name="resolution_camera_max">Camera maximum</string>
+    <string name="resolution_camera_max_hint">Highest resolution compatible with live preview, AI analysis and photos. Can slow analysis; it is not the sensor megapixel mode.</string>
+    <string name="search_no_clover_to_save">No clover detected now. Frame a clover before saving.</string>
+    <string name="search_save_requires_clover">Frame a clover to enable saving.</string>
+    <string name="camera_zoom_in">Zoom in</string>
+    <string name="camera_zoom_out">Zoom out</string>
+    <string name="camera_zoom_ratio">%1$.1f×</string>
+    <string name="camera_zoom_error">Zoom could not be changed. Try again.</string>
+    <string name="camera_start_error">Camera could not start. Try a lower resolution in Settings.</string>
+    <string name="search_model_confidence">AI confidence: %1$d%%</string>
+    <string name="search_check_leaves">Check the four leaves: the AI can be wrong.</string>
+    <string name="info_model_photo_credits">Training photo credits</string>
+</resources>

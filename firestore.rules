@@ -1,0 +1,397 @@
+rules_version = '2';
+
+// Security rules for Lucky Prospector.
+//
+// These rules are the only thing standing between one user's data and another's.
+// Client code is not a control: anyone can talk to Firestore directly with a valid
+// token, so every guarantee the product makes about privacy has to be expressed here.
+//
+// Deploy with:  firebase deploy --only firestore:rules
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    // Counters missing from older documents read as zero.
+    function counter(data, key) {
+      return data.keys().hasAny([key]) ? data[key] : 0;
+    }
+
+    // A pin leaves the map after 3 abuse reports or when 2 different people say
+    // it is gone. Mirrors SharedSighting.REPORT_HIDE_THRESHOLD and
+    // GONE_HIDE_THRESHOLD. Removal is logical: the document stays, the flag
+    // stops it from being served.
+    function hiddenFor(data) {
+      return counter(data, 'reportCount') >= 3 || counter(data, 'goneCount') >= 2;
+    }
+
+    // A write that hides a pin must also set when it is erased: 90 days later, by
+    // the Firestore TTL policy on purgeAt (privacy policy, retention). The client
+    // clock sets the date, so a two-day margin is allowed. Other writes leave it.
+    function purgeScheduled() {
+      return (resource.data.hidden == false && request.resource.data.hidden == true)
+        ? (request.resource.data.purgeAt is timestamp
+           && request.resource.data.purgeAt > request.time + duration.value(89, 'd')
+           && request.resource.data.purgeAt < request.time + duration.value(91, 'd'))
+        : !request.resource.data.diff(resource.data).affectedKeys().hasAny(['purgeAt']);
+    }
+
+    function pinPath(sightingId) {
+      return /databases/$(database)/documents/shared_sightings/$(sightingId);
+    }
+
+    function privatePath(collection, sightingId) {
+      return /databases/$(database)/documents/users/$(request.auth.uid)/$(collection)/$(sightingId);
+    }
+
+    function photoPath(sightingId) {
+      return /databases/$(database)/documents/shared_photos/$(sightingId);
+    }
+
+    function ownsPin(sightingId) {
+      return exists(privatePath('shared_claims', sightingId));
+    }
+
+    // Withdrawing a receipt (account deletion) must take the vote back in the same
+    // batch, so deleting a receipt and voting again cannot count twice. A receipt
+    // for a pin that no longer exists can simply go.
+    function voteWithdrawn(sightingId, key) {
+      return !exists(pinPath(sightingId))
+        || counter(getAfter(pinPath(sightingId)).data, key)
+             == counter(get(pinPath(sightingId)).data, key) - 1;
+    }
+
+    // One private receipt per account: absent before the batch, present after it.
+    function firstReceipt(collection, sightingId) {
+      return !exists(privatePath(collection, sightingId))
+        && existsAfter(privatePath(collection, sightingId));
+    }
+
+    // Claims are private but not arbitrary: allowing an account to manufacture
+    // a claim for an existing public pin would let it delete somebody else's pin.
+    // Creation and withdrawal are therefore tied to the matching public mutation
+    // in the same batch.
+    match /users/{uid}/shared_claims/{sightingId} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      // Update covers a claim whose pin its owner withdrew from another device:
+      // the same account may publish that finding again under the same id.
+      allow create, update: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['createdAt'])
+        && request.resource.data.createdAt == request.time
+        && !exists(pinPath(sightingId))
+        && existsAfter(pinPath(sightingId));
+      // Deleting a claim only requires that no pin remain afterwards.
+      allow delete: if signedIn()
+        && request.auth.uid == uid
+        && !existsAfter(pinPath(sightingId));
+    }
+
+    // Private daily publishing counter. Every new pin must move it in the same
+    // batch (see lastPublishedAt below), which caps an account at 20 pins a day.
+    match /users/{uid}/limits/publish {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['windowStart', 'count', 'lastPublishedAt'])
+        && request.resource.data.lastPublishedAt == request.time
+        && (
+          // A new window, allowed when none exists or the previous one is a day old.
+          (
+            request.resource.data.windowStart == request.time
+            && request.resource.data.count == 1
+            && (resource == null || resource.data.windowStart < request.time - duration.value(1, 'd'))
+          )
+          ||
+          // One more publication inside the current window.
+          (
+            resource != null
+            && request.resource.data.windowStart == resource.data.windowStart
+            && request.resource.data.count == resource.data.count + 1
+            && request.resource.data.count <= 20
+          )
+        );
+    }
+
+    // Private daily feedback counter: at most 10 messages a day per account,
+    // moved in the same batch as the message (see lastSentAt below).
+    match /users/{uid}/limits/feedback {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create, update: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['windowStart', 'count', 'lastSentAt'])
+        && request.resource.data.lastSentAt == request.time
+        && (
+          (
+            request.resource.data.windowStart == request.time
+            && request.resource.data.count == 1
+            && (resource == null || resource.data.windowStart < request.time - duration.value(1, 'd'))
+          )
+          ||
+          (
+            resource != null
+            && request.resource.data.windowStart == resource.data.windowStart
+            && request.resource.data.count == resource.data.count + 1
+            && request.resource.data.count <= 10
+          )
+        );
+    }
+
+    // One immutable private receipt per account and pin. It can be created only
+    // while the same batch increments the anonymous public count.
+    match /users/{uid}/confirmations/{sightingId} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['confirmedAt'])
+        && request.resource.data.confirmedAt == request.time
+        && exists(pinPath(sightingId))
+        && getAfter(pinPath(sightingId)).data.confirmations
+             == get(pinPath(sightingId)).data.confirmations + 1;
+      allow delete: if signedIn()
+        && request.auth.uid == uid
+        && voteWithdrawn(sightingId, 'confirmations');
+    }
+
+    // One immutable private report receipt per account and pin. The public pin
+    // receives only an anonymous count; reason and reporter remain private.
+    match /users/{uid}/reports/{sightingId} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['reason', 'reportedAt'])
+        && request.resource.data.reason in
+             ['NOT_RELEVANT', 'FALSE_INFORMATION', 'OFFENSIVE']
+        && request.resource.data.reportedAt == request.time
+        && exists(pinPath(sightingId))
+        // Authors cannot report their own pin.
+        && !ownsPin(sightingId)
+        && getAfter(pinPath(sightingId)).data.reportCount
+             == counter(get(pinPath(sightingId)).data, 'reportCount') + 1;
+      allow delete: if signedIn()
+        && request.auth.uid == uid
+        && voteWithdrawn(sightingId, 'reportCount');
+    }
+
+    // "It is not there any more": one private receipt per account and pin, while
+    // the public pin receives only an anonymous count. This is how pins leave the
+    // map; they never expire on their own.
+    match /users/{uid}/gone_reports/{sightingId} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow create: if signedIn()
+        && request.auth.uid == uid
+        && request.resource.data.keys().hasOnly(['reportedAt'])
+        && request.resource.data.reportedAt == request.time
+        && exists(pinPath(sightingId))
+        // The author withdraws instead; their word does not count towards removal.
+        && !ownsPin(sightingId)
+        && getAfter(pinPath(sightingId)).data.goneCount
+             == counter(get(pinPath(sightingId)).data, 'goneCount') + 1;
+      allow delete: if signedIn()
+        && request.auth.uid == uid
+        && voteWithdrawn(sightingId, 'goneCount');
+    }
+
+    // Future private collections must opt in with their own validation. The
+    // owner may read their subtree, but no generic write permission can bypass
+    // the claim rules above.
+    match /users/{uid}/{document=**} {
+      allow read: if signedIn() && request.auth.uid == uid;
+      allow write: if false;
+    }
+
+    // The map shared between all users.
+    //
+    // A shared document is readable by every signed-in client, so the protection
+    // cannot live in what the app chooses to display -- it has to live in what is
+    // allowed to be written. Hence the strict key list below: a document carrying
+    // an owner id, a wish, a photo or a precise position is rejected outright
+    // rather than merely ignored by the UI. The optional photo lives apart, in
+    // shared_photos, where only a cropped image without metadata is admitted.
+    match /shared_sightings/{sightingId} {
+
+      // Removed pins are not served at all, rather than merely skipped by the
+      // client. Queries must therefore filter on hidden == false themselves, or
+      // Firestore refuses them.
+      allow read: if signedIn() && resource.data.hidden == false;
+
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(
+             ['latitude', 'longitude', 'cellSizeMeters', 'type', 'sharedAt',
+              'confirmations', 'reportCount', 'goneCount', 'hidden', 'geohash', 'hasPhoto'])
+        && request.resource.data.keys().hasAll(
+             ['latitude', 'longitude', 'cellSizeMeters', 'type', 'sharedAt',
+              'confirmations', 'reportCount', 'goneCount', 'hidden', 'geohash', 'hasPhoto'])
+        // Nobody starts with confirmations or reports already in hand.
+        && request.resource.data.confirmations == 0
+        && request.resource.data.reportCount == 0
+        && request.resource.data.goneCount == 0
+        && request.resource.data.hidden == false
+        && request.resource.data.latitude is number
+        && request.resource.data.latitude >= -90 && request.resource.data.latitude <= 90
+        && request.resource.data.longitude is number
+        && request.resource.data.longitude >= -180 && request.resource.data.longitude <= 180
+        // Mirrors GeoCoarsening.MIN_CELL_METERS. A client asking to publish a
+        // finer cell is refused here, not just discouraged in Kotlin.
+        && request.resource.data.cellSizeMeters is int
+        && request.resource.data.cellSizeMeters >= 100
+        && request.resource.data.type in ['FOUR_LEAF_CLOVER', 'CLOVER_PATCH']
+        && request.resource.data.sharedAt == request.time
+        // Only used to query by area. It cannot be checked against the coordinates
+        // here; a wrong value merely hides the publisher's own pin.
+        && request.resource.data.geohash is string
+        && request.resource.data.geohash.size() == 9
+        // A pin promises a photo exactly when one is written in the same batch.
+        && request.resource.data.hasPhoto is bool
+        && request.resource.data.hasPhoto == existsAfter(photoPath(sightingId))
+        // The daily counter must move in the same batch.
+        && getAfter(privatePath('limits', 'publish')).data.lastPublishedAt == request.time
+        // The private claim proving who published this, written in the same batch.
+        // existsAfter sees the post-batch state, which is what makes a single
+        // atomic write possible; exists would evaluate before the batch and fail.
+        && existsAfter(privatePath('shared_claims', sightingId));
+
+      // Position and publication time stay immutable: allowing a position to be
+      // edited in place would let a client move a pin onto someone's address.
+      //
+      // Every community signal is one per person, enforced without recording who:
+      // the receipt lives in the signalling user's own subtree, so the public
+      // document gains a number and nothing else.
+      allow update: if signedIn() && (
+        // Someone standing in front of the patch saying it is still there.
+        (
+          request.resource.data.diff(resource.data).affectedKeys()
+               .hasOnly(['confirmations', 'lastConfirmedAt'])
+          && request.resource.data.confirmations == resource.data.confirmations + 1
+          && request.resource.data.lastConfirmedAt == request.time
+          // A confirmation is evidence from someone else; the author cannot give one.
+          && !ownsPin(sightingId)
+          && firstReceipt('confirmations', sightingId)
+        )
+        ||
+        // An abuse report.
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount', 'hidden', 'purgeAt'])
+          && request.resource.data.reportCount == counter(resource.data, 'reportCount') + 1
+          && request.resource.data.hidden == hiddenFor(request.resource.data)
+          && purgeScheduled()
+          && !ownsPin(sightingId)
+          && firstReceipt('reports', sightingId)
+        )
+        ||
+        // "It is not there any more".
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['goneCount', 'hidden', 'purgeAt'])
+          && request.resource.data.goneCount == counter(resource.data, 'goneCount') + 1
+          && request.resource.data.hidden == hiddenFor(request.resource.data)
+          && purgeScheduled()
+          && !ownsPin(sightingId)
+          && firstReceipt('gone_reports', sightingId)
+        )
+        ||
+        // Taking one's own confirmation, report or "gone" back, as when the account
+        // is deleted: the counter drops by one while the receipt disappears in the
+        // same batch. hidden is left as it is, so a removed pin stays removed.
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['confirmations'])
+          && request.resource.data.confirmations == resource.data.confirmations - 1
+          && exists(privatePath('confirmations', sightingId))
+          && !existsAfter(privatePath('confirmations', sightingId))
+        )
+        ||
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['reportCount'])
+          && request.resource.data.reportCount == counter(resource.data, 'reportCount') - 1
+          && exists(privatePath('reports', sightingId))
+          && !existsAfter(privatePath('reports', sightingId))
+        )
+        ||
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['goneCount'])
+          && request.resource.data.goneCount == counter(resource.data, 'goneCount') - 1
+          && exists(privatePath('gone_reports', sightingId))
+          && !existsAfter(privatePath('gone_reports', sightingId))
+        )
+        ||
+        // The owner may correct only the classification. Ownership is proven by
+        // the private claim, never by adding an identity to the public document.
+        (
+          request.resource.data.diff(resource.data).affectedKeys().hasOnly(['type'])
+          && request.resource.data.type in ['FOUR_LEAF_CLOVER', 'CLOVER_PATCH']
+          && ownsPin(sightingId)
+        )
+      );
+
+      // Deletion without an owner field on the public document: the claim under
+      // the user's own subtree is what proves ownership, so "chi l'ha pubblicato"
+      // stays private while withdrawal stays possible.
+      allow delete: if signedIn()
+        && exists(privatePath('shared_claims', sightingId))
+        && !existsAfter(privatePath('shared_claims', sightingId));
+    }
+
+    // The photo of a shared pin: a square crop around the detected clover,
+    // re-encoded by the app so it carries no EXIF and therefore no GPS position.
+    // It is served only while its pin is, so 3 reports or 2 "not there any more"
+    // withdraw the photo together with the pin.
+    match /shared_photos/{sightingId} {
+      allow read: if signedIn() && get(pinPath(sightingId)).data.hidden == false;
+
+      // Only together with a new pin, by the account that publishes it. The key
+      // list admits the image and nothing else: no name, no date, no position.
+      // Mirrors SharedPhotoPreparer.MAX_BYTES.
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(['jpeg'])
+        && request.resource.data.jpeg is bytes
+        && request.resource.data.jpeg.size() <= 90000
+        && !exists(pinPath(sightingId))
+        && getAfter(pinPath(sightingId)).data.hasPhoto == true
+        && existsAfter(privatePath('shared_claims', sightingId));
+
+      // Marked for erasure in the same batch that hides its pin, with the pin's date.
+      allow update: if signedIn()
+        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['purgeAt'])
+        && get(pinPath(sightingId)).data.hidden == false
+        && getAfter(pinPath(sightingId)).data.hidden == true
+        && request.resource.data.purgeAt == getAfter(pinPath(sightingId)).data.purgeAt;
+
+      // Withdrawn together with the pin, by its owner.
+      allow delete: if signedIn()
+        && exists(privatePath('shared_claims', sightingId))
+        && !existsAfter(privatePath('shared_claims', sightingId));
+    }
+
+    // Suggestions sent from the Profile screen. Write-only for the app: nobody,
+    // not even the sender, can read them back; the team reads them in the console.
+    // No account id is stored, only what the user typed and chose to leave.
+    // Mirrors FeedbackRepository limits.
+    match /feedback/{feedbackId} {
+      allow create: if signedIn()
+        && request.resource.data.keys().hasOnly(
+             ['category', 'message', 'contact', 'appVersion', 'language', 'createdAt'])
+        && request.resource.data.keys().hasAll(
+             ['category', 'message', 'appVersion', 'language', 'createdAt'])
+        && request.resource.data.category in ['IDEA', 'PROBLEM', 'WRONG_DETECTION']
+        && request.resource.data.message is string
+        && request.resource.data.message.size() > 0
+        && request.resource.data.message.size() <= 2000
+        && (!request.resource.data.keys().hasAny(['contact'])
+            || (request.resource.data.contact is string && request.resource.data.contact.size() <= 200))
+        && request.resource.data.appVersion is string
+        && request.resource.data.appVersion.size() <= 32
+        && request.resource.data.language is string
+        && request.resource.data.language.size() <= 16
+        && request.resource.data.createdAt == request.time
+        && getAfter(privatePath('limits', 'feedback')).data.lastSentAt == request.time;
+    }
+
+    // Anything not matched above is denied. Adding a collection means adding a
+    // rule for it deliberately, rather than discovering it was world-readable.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

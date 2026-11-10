@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "model_release": "flc-yolox-tiny-v0.1.0-rc1",
+  "model_lab_tag": "flc-yolox-tiny-v0.1.0-rc1",
+  "training_record": {
+    "path": "reports/generated/t10tiny_full_run_record.json",
+    "sha256": "960d50a40fa6e9ed117bbd46f8c16ac5ae9f0be352023e301550329f92e9e72c"
+  },
+  "sources": [
+    {
+      "name": "Hunting for four-leaf clovers Dataset",
+      "author": "Adam Fonagy",
+      "url": "https://universe.roboflow.com/adam-fonagy/hunting-for-four-leaf-clovers",
+      "license": "CC BY 4.0",
+      "manifest_sha256": "9f38fc225848fea3a4871a1c4e31dee9f627be4ebcbc1139f69af7e3695785a1"
+    },
+    {
+      "name": "4 leaf clover detect Dataset",
+      "author": "test",
+      "url": "https://universe.roboflow.com/test-ara07/4-leaf-clover-detect",
+      "license": "CC BY 4.0",
+      "manifest_sha256": "e260ba9a408e8a7c0bc3871944487c4a8ef4f5fed409454319712661372307cb"
+    },
+    {
+      "name": "clover Object Detection Dataset",
+      "author": "Clover Detection",
+      "url": "https://universe.roboflow.com/clover-detection/clover-ucups",
+      "license": "CC BY 4.0",
+      "manifest_sha256": "00363aa398c7069d34106e8c3d665cee6159e38c6a089add52287c9604a818e6"
+    }
+  ]
+}

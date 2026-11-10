@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "model_version": "0.1.0-rc1",
+  "task": "object_detection",
+  "format": "tflite",
+  "input": {
+    "width": 640,
+    "height": 640,
+    "channels": 3,
+    "color_order": "BGR",
+    "dtype": "float32",
+    "normalization": "none_0_255",
+    "resize": "letterbox_top_left_114"
+  },
+  "classes": ["clover_3", "clover_4", "clover_5_plus"],
+  "output_decoder": "yolox_cxcywh_objectness_classes_v1",
+  "recommended_confidence": 0.25,
+  "recommended_iou": 0.65,
+  "artifact_sha256": "75d954cea0b77be875cacedc5928277ba028e5fa5fabd93c67f77dd9e3cf12cd",
+  "dataset_manifest_sha256": "15c90e5dd9d3c60be42adec514445c79cda92e2e27a9124d35356fe41140c325",
+  "license_summary": "YOLOX framework Apache-2.0; project-trained weights; source datasets CC BY 4.0 with attribution in dataset-provenance.json",
+  "guide_leaf_px_min": 120,
+  "guide_leaf_px_ideal": 240,
+  "guide_leaf_px_max": 400,
+  "guide_recall_collapse_below_px": 80
+}

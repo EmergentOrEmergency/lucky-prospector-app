@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_preparing">Kamera wird vorbereitet…</string>
+    <string name="camera_hint_more_light">Suche etwas mehr Licht</string>
+    <string name="camera_hint_hold_still">Halte das Telefon ruhig</string>
+    <string name="search_four_leaf_possible">Mögliches vierblättriges Kleeblatt. Geh näher heran und halte still.</string>
+    <string name="search_four_leaf_confirmed">Mögliches vierblättriges Kleeblatt · stabile Erkennung</string><string name="search_four_leaf_confirmed_many">%1$d mögliche vierblättrige Kleeblätter · stabile Erkennung</string>
+    <string name="search_clover_patch">Du bist am richtigen Ort. Suche weiter.</string>
+    <string name="search_ai_on_device">KI-Suche auf dem Gerät</string>
+    <string name="search_demo_mode">Demomodus</string>
+    <string name="search_model_unavailable">Modell nicht verfügbar: Demomodus</string>
+    <string name="search_taking_photo">Foto wird aufgenommen…</string>
+    <string name="search_save_finding">Fund speichern</string>
+    <string-array name="search_encouragements">
+        <item>Such weiter… das Glück versteckt sich zwischen den Blättern.</item>
+        <item>Weiter so: Das nächste könnte dein Glücksblatt sein.</item>
+        <item>Nimm dir Zeit, Blatt für Blatt.</item>
+        <item>Das Glück ist mit denen, die weitersuchen.</item>
+        <item>Geh näher heran und ändere langsam den Winkel.</item>
+    </string-array>
+<string name="nav_search">Suchen</string><string name="nav_findings">Funde</string><string name="nav_map">Karte</string><string name="nav_profile">Profil</string>
+    <string name="language_button">Sprache: %1$s</string><string name="language_dialog_title">App-Sprache</string><string name="language_system">Gerätesprache</string><string name="language_english">English</string><string name="language_italian">Italiano</string><string name="language_french">Français</string><string name="language_german">Deutsch</string><string name="language_spanish">Español</string><string name="close">Schließen</string>
+    <string name="profile_title">Dein Glückstagebuch</string><string name="profile_description">Suchen und speichern ohne Konto. Melde dich nur an, um die geteilte Karte zu sehen und dort zu veröffentlichen oder einen Vorschlag zu senden.</string><string name="profile_privacy">Das Teilen ist anonym: Wünsche und genaue Standorte verlassen nie dein Gerät. Ein Foto wird nur geteilt, wenn du es willst, zugeschnitten auf den Klee und ohne GPS-Daten.</string><string name="sign_in_google">Mit Google anmelden</string><string name="signing_in">Anmeldung…</string><string name="account_connected">Verbundenes Konto</string><string name="sign_out">Abmelden</string><string name="error_sign_in">Anmeldung fehlgeschlagen. Versuche es erneut.</string><string name="error_sign_out">Abmeldung fehlgeschlagen. Versuche es erneut.</string>
+    <string name="gallery_empty_title">Das Glück hinterlässt Spuren</string><string name="gallery_empty_description">Richte die Kamera auf eine Kleestelle und speichere hier jede Entdeckung. Fotos und Wünsche bleiben offline verfügbar.</string><string name="private_by_default">Standardmäßig privat</string><string name="start_search">Suche starten</string><string name="gallery_title">Dein Glückstagebuch</string><plurals name="finding_count"><item quantity="one">%1$d Fund auf diesem Gerät gespeichert</item><item quantity="other">%1$d Funde auf diesem Gerät gespeichert</item></plurals>
+    <string name="wish_prefix">Wunsch: %1$s</string><string name="corrected_prefix">Korrigiert: %1$s</string><string name="type_four_leaf_clover">Vierblättriges Kleeblatt</string><string name="type_clover_patch">Kleestelle</string><string name="sync_local_only">Nur auf diesem Gerät</string><string name="sync_pending">Wartet auf Synchronisierung</string><string name="sync_synced">Synchronisiert</string><string name="sync_failed">Synchronisierungsfehler</string>
+    <string name="wish_optional">Dein Wunsch (optional)</string><string name="classification">Klassifizierung</string><string name="shared_map">Gemeinsame Karte</string><string name="sharing_privacy_detail">Geteilt werden der vom Klassifikator erkannte Typ und ein auf etwa 150 m gerundeter Bereich, auf Wunsch außerdem ein Fotoausschnitt ohne GPS-Daten. Wünsche, Identität und genaue Koordinaten bleiben auf deinem Gerät.</string><string name="finding_without_location">Dieser Fund hat keinen Standort und kann nicht geteilt werden.</string><string name="sign_in_to_share">Zum Teilen anmelden</string><string name="sharing_private">Privat</string><string name="sharing_pending">Veröffentlichung…</string><string name="sharing_anonymous">Anonym geteilt</string><string name="sharing_failed">Veröffentlichung fehlgeschlagen</string><string name="error_operation">Vorgang fehlgeschlagen. Versuche es erneut.</string><string name="error_publish_limit">Du hast heute bereits die maximale Anzahl an Funden geteilt. Versuche es morgen erneut.</string><string name="error_save">Speichern fehlgeschlagen. Prüfe die Verbindung und versuche es erneut.</string><string name="saving">Speichern…</string><string name="save">Speichern</string><string name="delete">Löschen</string><string name="back">Zurück</string>
+    <string name="map_private_title">Deine Glückskarte</string><string name="map_shared_title">Die gemeinsame Karte</string><string name="map_private_subtitle">Jeder Punkt bleibt auch offline verfügbar.</string><string name="map_shared_subtitle">Anonyme Bereiche aus der Community, niemals genaue Standorte.</string><string name="map_tab_mine">Meine</string><string name="map_tab_shared">Geteilt</string><plurals name="clover_count"><item quantity="one">%1$d Kleeblatt</item><item quantity="other">%1$d Kleeblätter</item></plurals><plurals name="patch_count"><item quantity="one">%1$d Stelle</item><item quantity="other">%1$d Stellen</item></plurals><plurals name="confirmation_count"><item quantity="one">%1$d Bestätigung</item><item quantity="other">%1$d Bestätigungen</item></plurals>
+    <string name="map_local_name">Lokale Karte</string><string name="map_offline_note">Schematischer Hintergrund • kein Datenverbrauch</string><string name="map_gesture_hint">Zum Zoomen aufziehen • zum Verschieben ziehen • zum Zurücksetzen doppeltippen</string><string name="map_filter_content_description">Funde filtern</string><string name="map_sign_in_title">Entdecke glückliche Orte</string><string name="map_sign_in_description">Melde dich nur an, um die anonyme Karte zu lesen und beizutragen. Deine private Karte bleibt ohne Konto verfügbar.</string><string name="sign_in_continue">Zum Fortfahren anmelden</string><string name="error_shared_map">Die gemeinsame Karte ist nicht verfügbar. Prüfe die Verbindung und versuche es erneut.</string><string name="map_no_recent_pins">Keine aktuellen Markierungen</string><string name="map_first_shared_pin">Teile einen Fund, um die Karte zu eröffnen.</string><string name="map_zone_summary">Bereich von etwa %1$d m • %2$s</string><string name="map_published_by_you">Von dir veröffentlicht</string><string name="map_already_confirmed">Du hast diese Markierung bereits bestätigt</string><string name="map_confirming">Bestätigung…</string><string name="map_confirm_still_there">Bestätigen, dass es den Ort noch gibt</string>
+    <string name="map_privacy_note">Anonyme, gerundete Pins. Fotos sind Ausschnitte ohne GPS-Daten; Wünsche und Identitäten werden nie angezeigt.</string><string name="map_private_accessibility">Offline-Karte mit %1$d vierblättrigen Kleeblättern und %2$d Kleestellen. Tippe auf einen Punkt, um ihn zu öffnen.</string><string name="map_shared_accessibility">Anonyme gemeinsame Karte mit %1$d Bereichen, davon %2$d aktuell. Tippe auf einen Punkt für Details.</string><string name="shared_type_four_leaf">Bereich mit vierblättrigen Kleeblättern</string><string name="freshness_fresh">Aktuell</string><string name="freshness_fading">Erneut bestätigen</string><string name="freshness_stale">Veraltet</string><string name="map_empty_title">Die Karte wartet auf den ersten Fund</string><string name="map_empty_description">Suche eine Kleestelle oder ein vierblättriges Kleeblatt: Der genaue Standort bleibt auf deinem Gerät.</string>
+    <string name="location_dialog_title">Standort speichern?</string><string name="location_dialog_text">Der Standort zeigt den Fund auf deiner Karte und bleibt auf diesem Gerät. Du kannst ohne Freigabe fortfahren. Bei älteren Android-Versionen ist der Fotozugriff auch für das Kopieren in die Galerie nötig.</string><string name="allow">Erlauben</string><string name="continue_without">Ohne fortfahren</string><string name="error_photo">Foto konnte nicht aufgenommen werden. Versuche es erneut.</string><string name="confirm_finding">Fund bestätigen</string><string name="type_patch_short">Stelle</string><string name="wish_short_optional">Wunsch (optional)</string><string name="location_private_note">Der Standort wird nur auf diesem Gerät gespeichert.</string><string name="confirm">Bestätigen</string><string name="cancel">Abbrechen</string><string name="camera_permission_description">Die Kamera sucht in Echtzeit nach vierblättrigen Kleeblättern.</string><string name="camera_permission_button">Kamera erlauben</string>
+    <string name="error_shared_map_update">Die gemeinsame Karte konnte nicht aktualisiert werden.</string><string name="error_confirmation">Bestätigung fehlgeschlagen oder bereits von diesem Konto gesendet.</string>    <string name="map_zoom_in">Vergrößern</string><string name="map_zoom_out">Verkleinern</string><string name="map_zoom_reset">Zoom zurücksetzen</string>
+    <string name="map_online_name">Karte mit Städten und Straßen</string>
+    <string name="map_online_note">Eine Internetverbindung ist erforderlich</string>
+    <string name="map_online_privacy_note">Der Kartenanbieter kann den betrachteten Bereich erkennen, sieht aber weder deine Funde noch persönliche Informationen.</string>
+    <string name="map_no_private_pins_overlay">Noch keine gespeicherten Orte — die Karte kann trotzdem erkundet werden</string>
+    <string name="map_shared_date">Datum der Quelle: %1$s</string>
+    <string name="map_report_pin">Als ungeeignet melden</string>
+    <string name="map_report_title">Warum ist diese Markierung ungeeignet?</string>
+    <string name="map_report_explanation">Wähle den Grund. Wenn der Ort einfach nicht mehr existiert, nutze stattdessen „Nicht mehr da“.</string>
+    <string name="map_report_not_relevant">Hat nichts mit Kleeblättern oder einer Kleestelle zu tun</string>
+    <string name="map_report_false_information">Falsche oder irreführende Informationen</string>
+    <string name="map_report_offensive">Spam oder anstößiger Inhalt</string>
+    <string name="map_reporting">Meldung wird gesendet…</string>
+    <string name="map_report_sent">Meldung gesendet</string>
+    <string name="error_report">Die Meldung konnte nicht gesendet werden. Prüfe die Verbindung und versuche es erneut.</string>
+    <string name="map_mark_gone">Nicht mehr da</string>
+    <string name="map_marking_gone">Wird gesendet…</string>
+    <string name="map_gone_sent">Du hast gemeldet, dass es nicht mehr da ist</string>
+    <string name="map_gone_title">Nichts mehr da?</string>
+    <string name="map_gone_explanation">Nutze dies, wenn die Wiese oder der Klee nicht mehr da ist. Wenn zwei verschiedene Personen es melden, verschwindet der Pin von der Karte. Niemand sieht, wer es gemeldet hat.</string>
+    <string name="map_gone_confirm">Ja, nicht mehr da</string>
+    <string name="map_gone_one">Eine Person sagt, dass es nicht mehr da ist.</string>
+    <string name="error_mark_gone">Die Meldung konnte nicht gesendet werden. Prüfe die Verbindung und versuche es erneut.</string>
+    <string name="share_checking">Foto wird geprüft…</string>
+    <string name="share_review_title">Prüfe, was du teilst</string>
+    <string name="share_review_type">Auf der geteilten Karte: %1$s</string>
+    <string name="share_downgraded">Der Klassifikator erkennt auf diesem Foto kein vierblättriges Kleeblatt, daher erscheint es als Kleewiese. Deine eigene Einordnung bleibt unverändert.</string>
+    <string name="share_review_text">Veröffentlicht wird nur dieser Ausschnitt um den Klee, ohne GPS-Koordinaten oder andere Fotodaten. Achte darauf, dass keine Häuser, Kennzeichen, Personen oder erkennbaren Orte zu sehen sind.</string>
+    <string name="share_with_photo">Mit Foto teilen</string>
+    <string name="share_without_photo">Ohne Foto teilen</string>
+    <string name="error_share_no_clover">Der Klassifikator sieht auf diesem Foto keinen Klee, daher kann es nicht geteilt werden.</string>
+    <string name="error_share_model_unavailable">Der Klassifikator ist nicht verfügbar, Teilen ist gerade nicht möglich.</string>
+    <string name="error_share_photo_unreadable">Das Foto konnte nicht gelesen werden.</string>
+    <string name="error_type_not_confirmed">Gespeichert. Auf der geteilten Karte bleibt es eine Kleewiese: Der Klassifikator sieht auf diesem Foto kein vierblättriges Kleeblatt.</string>
+    <string name="feedback_button">Vorschlag senden</string>
+    <string name="feedback_title">Hilf uns, besser zu werden</string>
+    <string name="feedback_idea">Idee</string>
+    <string name="feedback_problem">Problem</string>
+    <string name="feedback_detection">Falsch erkannt</string>
+    <string name="feedback_question_idea">Was hat dir heute gefehlt? Was sollte die App können?</string>
+    <string name="feedback_question_problem">Was ist passiert, und was hast du stattdessen erwartet?</string>
+    <string name="feedback_question_detection">Was wurde falsch erkannt? Ein übersehenes vierblättriges Kleeblatt, ein dreiblättriges für vier gehalten, etwas anderes?</string>
+    <string name="feedback_contact">Kontakt für eine Antwort (optional)</string>
+    <string name="feedback_privacy">Deine Nachricht erreicht das Team ohne deinen Namen. Dein Konto dient nur dazu, Spam zu begrenzen. Hinterlasse einen Kontakt nur, wenn du eine Antwort möchtest.</string>
+    <string name="feedback_send">Senden</string>
+    <string name="feedback_sending">Wird gesendet…</string>
+    <string name="feedback_thanks_title">Danke!</string>
+    <string name="feedback_thanks">Wir lesen jede Nachricht. Ideen wie deine entscheiden, was wir als Nächstes bauen.</string>
+    <string name="feedback_sign_in">Melde dich an, um einen Vorschlag zu senden: So bleibt das Postfach frei von Spam. Dein Name wird der Nachricht nicht beigefügt.</string>
+    <string name="feedback_limit">Du hast heute bereits die maximale Anzahl an Nachrichten gesendet. Versuche es morgen erneut.</string>
+    <string name="error_feedback">Die Nachricht konnte nicht gesendet werden. Prüfe die Verbindung und versuche es erneut.</string>
+    <string name="captured_photo_description">Das Foto, das gespeichert wird</string>
+    <string name="info_button">Info und Datenschutz</string>
+    <string name="info_title">Info und Datenschutz</string>
+    <string name="info_privacy_title">Datenschutz in Kürze</string>
+    <string name="info_privacy_summary">Das Kamerabild wird auf deinem Telefon analysiert und nie hochgeladen. Fotos, Wünsche und genaue Standorte bleiben auf diesem Gerät; jedes Foto wird auch in deiner Galerie gespeichert. Du kannst ohne Konto suchen und speichern. Nur wenn du einen Fund teilst, erhält die geteilte Karte seinen Typ, einen auf etwa 150 m gerundeten Bereich und, wenn du willst, einen Fotoausschnitt ohne GPS-Daten. Andere Nutzer sehen nie, wer ihn veröffentlicht hat; der Projektadministrator kann einen Pin seinem Konto zuordnen. Keine Werbung, keine Analytics. Du kannst Geteiltes jederzeit zurückziehen oder dein Konto löschen.</string>
+    <string name="info_privacy_full">Vollständige Datenschutzerklärung lesen</string>
+    <string name="info_contacts_title">Kontakt</string>
+    <string name="info_contacts_text">Ideen, Probleme oder ein falsch erkannter Klee: Schreib uns, wir lesen jede Nachricht.</string>
+    <string name="info_contact_email">Schreib an %1$s</string>
+    <string name="info_licenses_title">Lizenzen und Danksagungen</string>
+    <string name="info_version">Version %1$s</string>
+    <string name="delete_account_title">Konto und Daten löschen</string>
+    <string name="delete_account_text">Entfernt alle geteilten Funde von der geteilten Karte, Fotos eingeschlossen, zieht deine Bestätigungen und Meldungen zurück und löscht dein Konto. Auf diesem Telefon gespeicherte Funde bleiben hier.</string>
+    <string name="delete_account_button">Konto löschen</string>
+    <string name="delete_account_confirm_text">Das kann nicht rückgängig gemacht werden. Deine geteilten Pins und ihre Fotos werden entfernt und dein Konto gelöscht. Eventuell musst du zur Bestätigung dein Google-Konto erneut auswählen.</string>
+    <string name="delete_account_confirm">Endgültig löschen</string>
+    <string name="deleting_account">Wird gelöscht…</string>
+    <string name="error_delete_account">Das Konto konnte nicht gelöscht werden. Prüfe die Verbindung und versuche es erneut.</string>
+    <string name="account_deleted">Dein Konto und deine geteilten Funde wurden gelöscht. Auf diesem Telefon gespeicherte Funde sind noch da.</string>
+    <string name="did_you_know">Schon gewusst?</string>
+    <string name="another_fact">Noch eins</string>
+    <string name="preserve_button">So bewahrst du es auf</string>
+    <string name="preserve_title">Dein vierblättriges Kleeblatt aufbewahren</string>
+    <string name="preserve_tips_title">Tipps</string>
+    <string-array name="clover_facts">
+        <item>Bei einer Zählung von rund 5,7 Millionen Kleeblättern in sechs europäischen Ländern hatte etwa jedes 5.000. vier Blätter – doppelt so häufig wie das berühmte „1 von 10.000“.</item>
+        <item>Das vierblättrige Kleeblatt ist keine eigene Art: Meist ist es ein Weißklee (Trifolium repens) mit einem zusätzlichen Blättchen.</item>
+        <item>2010 lokalisierten Forscher der University of Georgia das Gen für vier Blätter. Es wird vom Dreiblatt-Gen überdeckt, und Licht und Temperatur entscheiden, ob das vierte Blatt erscheint.</item>
+        <item>Eine der frühesten schriftlichen Erwähnungen stammt von 1620: John Melton schrieb, wer auf dem Feld „vierblättriges Gras“ finde, werde bald „etwas Gutes“ finden.</item>
+        <item>Der irische Shamrock hat drei Blätter, nicht vier. Erhebungen von 1893 und 1988 fanden keine einzige „echte“ Art: Gepflückt wurden vor allem Kleiner Klee und Weißklee.</item>
+        <item>Der Überlieferung nach erklärte der heilige Patrick mit dem dreiblättrigen Shamrock die Dreifaltigkeit – schriftlich taucht die Geschichte aber erst 1726 auf, über tausend Jahre später.</item>
+        <item>Der Tradition nach stehen die vier Blätter für Glaube, Hoffnung, Liebe und Glück.</item>
+        <item>Einer Legende nach nahm Eva beim Verlassen des Gartens Eden ein vierblättriges Kleeblatt als Andenken an das Paradies mit.</item>
+        <item>In der britischen und irischen Folklore kann man mit einem vierblättrigen Kleeblatt Feen sehen und ihre Zauber durchschauen.</item>
+        <item>In Deutschland verschenkt man zu Neujahr „Glücksklee“. Er ist kein echter Klee, sondern Oxalis tetraphylla, eine Pflanze mit immer vierlappigen Blättern.</item>
+        <item>Der Guinness-Rekord für die meisten Blätter an einem Kleeblatt liegt bei 63, aufgestellt 2023 von Yoshiharu Watanabe in Japan.</item>
+        <item>Auf Japanisch heißt Weißklee „shirotsumekusa“, „weißes Packgras“: In der Edo-Zeit polsterte getrockneter Klee holländisches Glas, das nach Nagasaki verschifft wurde.</item>
+    </string-array>
+    <string-array name="preserve_steps">
+        <item>Presse es so bald wie möglich, innerhalb weniger Stunden. Bis dahin flach in gefaltetem Papier aufbewahren, nicht in der Tasche.</item>
+        <item>Ist es feucht von Tau oder Regen, tupfe es vorsichtig trocken.</item>
+        <item>Breite die Blättchen flach zwischen zwei saugfähigen Blättern aus (Löschpapier, Kaffeefilter oder Backpapier). Nicht direkt auf die Buchseiten legen: Druckfarbe und säurehaltiges Papier können Flecken machen.</item>
+        <item>Lege es in die Mitte eines schweren Buchs und beschwere es zusätzlich. Eine Blumenpresse ist noch besser.</item>
+        <item>Wechsle das saugfähige Papier in den ersten Tagen täglich, danach alle paar Tage, gegen Schimmel und Braunfärbung.</item>
+        <item>Lass es 1–3 Wochen an einem trockenen Ort gepresst, bis es vollständig trocken und steif ist.</item>
+        <item>Schütze es erst, wenn es ganz trocken ist: laminieren, unter Glas rahmen oder in einer Klarsichthülle aufbewahren.</item>
+    </string-array>
+    <string-array name="preserve_tips">
+        <item>Halte es von direktem Sonnenlicht fern: Das Grün verblasst mit der Zeit ohnehin, Licht beschleunigt es. Laminieren erhält die Farbe am besten.</item>
+        <item>Versiegle es erst, wenn es ganz trocken ist, sonst beschlägt es unter Folie oder Glas.</item>
+        <item>Die schnelle Mikrowellenmethode gibt es, aber sie überhitzt leicht, und ein Buch in der Mikrowelle ist riskant: Die langsame Presse ist sicherer.</item>
+    </string-array>
+    <string name="settings_title">Einstellungen</string>
+    <string name="settings_find_title">Wenn du ein vierblättriges Kleeblatt findest</string>
+    <string name="settings_sound">Ton</string>
+    <string name="settings_sound_hint">Ein kurzes Glockenspiel. Es folgt der Medienlautstärke des Telefons.</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_vibration_hint">Eine kurze Vibration, damit du es auch ohne Ton merkst.</string>
+    <string name="settings_sensitivity_title">Suchempfindlichkeit</string>
+    <string name="settings_sensitivity_intro">Wie sicher die App sein muss, bevor sie ein vierblättriges Kleeblatt meldet. Jeder Klee wird immer mit einem zarten Quadrat angezeigt.</string>
+    <string name="sensitivity_careful">Vorsichtig</string>
+    <string name="sensitivity_careful_hint">Weniger Fehlalarme: dauert etwas länger und übersieht vielleicht eins.</string>
+    <string name="sensitivity_normal">Normal</string>
+    <string name="sensitivity_normal_hint">Die empfohlene Balance.</string>
+    <string name="sensitivity_sensitive">Empfindlich</string>
+    <string name="sensitivity_sensitive_hint">Findet mehr, meldet aber auch Klee, der sich als dreiblättrig herausstellt.</string>
+    <string name="share_with_friends">Mit Freunden teilen</string>
+    <string name="share_chooser_title">Teile dein Glück</string>
+    <string name="share_text_four_leaf">Ich habe ein vierblättriges Kleeblatt gefunden! ☘ Such auch du dein Glück mit %1$s: %2$s</string>
+    <string name="share_text_patch">Ich habe eine Kleewiese gefunden! ☘ Hilf mir, das Glück zu suchen – installier auch du %1$s: %2$s</string>
+    <string name="share_card_footer">Gefunden mit Lucky Prospector</string>
+    <string name="error_share_card">Das Bild konnte nicht vorbereitet werden.</string>
+    <string-array name="lucky_wishes">
+        <item>Möge dieses kleine Blatt dir ein großes Lächeln schenken.</item>
+        <item>Heute hat das Glück dich gefunden. Halt es fest.</item>
+        <item>Vier Blätter, vier schöne Dinge, die auf dich warten.</item>
+        <item>Möge dein nächster Schritt so glücklich sein wie dieser.</item>
+        <item>Ein bisschen grünes Glück, nur für dich.</item>
+        <item>Möge der Tag so hell bleiben wie dieser Fund.</item>
+        <item>Du hast genau hingesehen, und das Glück hat zurückgeschaut.</item>
+        <item>Mögen gute Nachrichten dich so leicht finden wie du dieses Kleeblatt.</item>
+        <item>Geduld, ein wacher Blick und ein Hauch Magie.</item>
+        <item>Möge dich dieses Kleeblatt daran erinnern, dass Seltenes geschieht.</item>
+        <item>Das Glück mag die, die weitersuchen.</item>
+        <item>Eins unter Tausenden – ein bisschen wie du.</item>
+        <item>Mögen deine Wünsche wachsen wie Klee im Frühling.</item>
+        <item>Ein Glücksblatt für einen Glückstag.</item>
+        <item>Möge dir dieser Fund Ruhe und gute Gesellschaft bringen.</item>
+        <item>Bewahre es in einem Buch auf, und in deiner Erinnerung.</item>
+        <item>Mögest du immer finden, was du suchst.</item>
+        <item>Heute hat die Wiese dich ausgewählt.</item>
+        <item>Möge das Glück auf jedem Weg neben dir gehen.</item>
+        <item>Kleines Blatt, großer Wunsch.</item>
+        <item>Möge dieses Kleeblatt deinen Wunsch ein Stück weitertragen.</item>
+        <item>Auf viele weitere Glückstage wie diesen.</item>
+        <item>Mögest du dieses Glück mit jemandem teilen, den du liebst.</item>
+        <item>Grün für die Hoffnung, vier für das Glück.</item>
+        <item>Mögen die kleinen Überraschungen nie aufhören.</item>
+        <item>Von dir gefunden, allen gewünscht.</item>
+        <item>Möge dein Herz so leicht sein wie dieses Blatt.</item>
+        <item>Jedes Kleeblatt ist ein kleiner Grund zum Lächeln.</item>
+        <item>Möge dies der Beginn einer Glückssträhne sein.</item>
+        <item>Glück ist leise. Du hast es bemerkt.</item>
+    </string-array>
+    <string name="add_manually">Von Hand hinzufügen</string>
+    <string name="manual_title">Fund hinzufügen</string>
+    <string name="manual_pick_photo">Foto auswählen</string>
+    <string name="manual_change_photo">Foto ändern</string>
+    <string name="manual_date">Datum: %1$s</string>
+    <string name="manual_location_title">Wo hast du ihn gefunden?</string>
+    <string name="location_from_photo">Im Foto gespeicherter Standort</string>
+    <string name="location_current">Mein aktueller Standort</string>
+    <string name="location_address">Adresse oder Park suchen</string>
+    <string name="location_none">Ohne Standort</string>
+    <string name="locating">Standort wird ermittelt…</string>
+    <string name="address_hint">Adresse oder Name des Parks</string>
+    <string name="address_search">Suchen</string>
+    <string name="address_searching">…</string>
+    <string name="address_no_results">Kein Ort gefunden. Füge die Stadt hinzu.</string>
+    <string name="address_privacy">Die Suche läuft über den Ortungsdienst des Telefons (meist Google). Der Standort wird nur auf diesem Telefon gespeichert.</string>
+    <string name="error_location">Standort nicht verfügbar.</string>
+    <string name="expand">Anzeigen</string>
+    <string name="collapse">Ausblenden</string>
+    <string name="community_rules_title">Regeln der gemeinsamen Karte</string>
+    <string name="community_rules_accept">Ich akzeptiere die Regeln der gemeinsamen Karte</string>
+    <string-array name="community_rules">
+        <item>Nur Klee und Glücksklee: keine Personen, Gesichter, Häuser oder Kennzeichen.</item>
+        <item>Keine Privatgärten oder Orte, die man nicht betreten darf.</item>
+        <item>Keine gefälschten Funde, Werbung oder beleidigenden Inhalte.</item>
+        <item>Pins, die von drei Personen gemeldet werden, werden entfernt.</item>
+    </string-array>
+    <string name="camera_hint_move_closer">Geh näher heran: der Klee wirkt zu klein</string>
+    <string name="camera_hint_move_back">Geh etwas zurück, um mehr Wiese zu sehen</string>
+    <string name="search_size_guide">Größe des Klees</string>
+    <string name="search_fps">KI: %1$.1f fps</string>
+    <string name="settings_resolution_title">Suchauflösung</string>
+    <string name="settings_resolution_intro">Wähle den Kamerastream für die KI. Bei der Suche siehst du die tatsächliche Auflösung und KI-Bildrate. Die Vorschau kann flüssiger sein. Die Kamera verwendet die nächstgelegene unterstützte Größe.</string>
+    <string name="resolution_standard">Standard</string>
+    <string name="resolution_standard_hint">Weniger Verarbeitung, mit dem Klee aus der Nähe.</string>
+    <string name="resolution_high">Hoch</string>
+    <string name="resolution_high_hint">Mehr Details; die Analysegeschwindigkeit hängt vom Handy und den Bedingungen ab.</string>
+    <string name="resolution_max">4:3-Details</string>
+    <string name="resolution_max_hint">Mehr Pixel als Full HD im 4:3-Sensorformat. Benötigt mehr Verarbeitung.</string>
+    <string name="resolution_full_hd">Full HD</string>
+    <string name="resolution_full_hd_hint">Standard · 16:9. Ein Gleichgewicht zwischen Details und Analysegeschwindigkeit.</string>
+    <string name="resolution_camera_max">Kameramaximum</string>
+    <string name="resolution_camera_max_hint">Höchste Auflösung für gleichzeitige Vorschau, KI-Analyse und Fotos. Kann die Analyse verlangsamen; kein Megapixel-Modus des Sensors.</string>
+    <string name="search_no_clover_to_save">Gerade kein Klee erkannt. Richte die Kamera vor dem Speichern auf Klee.</string>
+    <string name="search_save_requires_clover">Richte die Kamera auf Klee, um zu speichern.</string>
+    <string name="camera_zoom_in">Heranzoomen</string>
+    <string name="camera_zoom_out">Herauszoomen</string>
+    <string name="camera_zoom_ratio">%1$.1f×</string>
+    <string name="camera_zoom_error">Zoom konnte nicht geändert werden. Versuche es erneut.</string>
+    <string name="camera_start_error">Kamera konnte nicht starten. Wähle in den Einstellungen eine niedrigere Auflösung.</string>
+    <string name="search_model_confidence">KI-Konfidenz: %1$d%%</string>
+    <string name="search_check_leaves">Prüfe die vier Blätter: Die KI kann sich irren.</string>
+    <string name="info_model_photo_credits">Bildnachweise der Trainingsfotos</string>
+</resources>

@@ -1,0 +1,3 @@
+# The model bundle is checked byte for byte against the SHA-256 in model-metadata.json:
+# never convert its line endings.
+app/src/main/assets/models/** -text

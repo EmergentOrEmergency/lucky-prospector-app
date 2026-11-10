@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_preparing">Preparando la cámara…</string>
+    <string name="camera_hint_more_light">Busca un poco más de luz</string>
+    <string name="camera_hint_hold_still">Mantén el teléfono quieto</string>
+    <string name="search_four_leaf_possible">Posible trébol de cuatro hojas. Acércate y no te muevas.</string>
+    <string name="search_four_leaf_confirmed">Posible trébol de cuatro hojas · detección estable</string><string name="search_four_leaf_confirmed_many">%1$d posibles tréboles de cuatro hojas · detecciones estables</string>
+    <string name="search_clover_patch">Estás en el lugar adecuado. Sigue buscando.</string>
+    <string name="search_ai_on_device">Búsqueda con IA en el dispositivo</string>
+    <string name="search_demo_mode">Modo de demostración</string>
+    <string name="search_model_unavailable">Modelo no disponible: modo de demostración</string>
+    <string name="search_taking_photo">Haciendo foto…</string>
+    <string name="search_save_finding">Guardar hallazgo</string>
+    <string-array name="search_encouragements">
+        <item>Busca, busca… la suerte se esconde entre las hojas.</item>
+        <item>Sigue: el próximo podría ser el afortunado.</item>
+        <item>Observa con calma, hoja por hoja.</item>
+        <item>La suerte acompaña a quien sigue buscando.</item>
+        <item>Acércate y cambia lentamente el ángulo.</item>
+    </string-array>
+<string name="nav_search">Buscar</string><string name="nav_findings">Hallazgos</string><string name="nav_map">Mapa</string><string name="nav_profile">Perfil</string>
+    <string name="language_button">Idioma: %1$s</string><string name="language_dialog_title">Idioma de la aplicación</string><string name="language_system">Idioma del dispositivo</string><string name="language_english">English</string><string name="language_italian">Italiano</string><string name="language_french">Français</string><string name="language_german">Deutsch</string><string name="language_spanish">Español</string><string name="close">Cerrar</string>
+    <string name="profile_title">Tu diario de la suerte</string><string name="profile_description">Busca y guarda sin cuenta. Inicia sesión solo para ver el mapa compartido y publicar en él, o para enviar una sugerencia.</string><string name="profile_privacy">Compartir es anónimo: los deseos y la ubicación precisa nunca salen de tu dispositivo. Una foto solo se comparte si lo eliges, recortada sobre los tréboles y sin datos GPS.</string><string name="sign_in_google">Iniciar sesión con Google</string><string name="signing_in">Iniciando sesión…</string><string name="account_connected">Cuenta conectada</string><string name="sign_out">Cerrar sesión</string><string name="error_sign_in">No se pudo iniciar sesión. Inténtalo de nuevo.</string><string name="error_sign_out">No se pudo cerrar sesión. Inténtalo de nuevo.</string>
+    <string name="gallery_empty_title">La suerte deja huellas</string><string name="gallery_empty_description">Apunta la cámara a una zona de tréboles y guarda aquí cada descubrimiento. Las fotos y los deseos siguen disponibles sin conexión.</string><string name="private_by_default">Privado de forma predeterminada</string><string name="start_search">Empezar a buscar</string><string name="gallery_title">Tu diario de la suerte</string><plurals name="finding_count"><item quantity="one">%1$d hallazgo guardado en este dispositivo</item><item quantity="other">%1$d hallazgos guardados en este dispositivo</item></plurals>
+    <string name="wish_prefix">Deseo: %1$s</string><string name="corrected_prefix">Corregido: %1$s</string><string name="type_four_leaf_clover">Trébol de cuatro hojas</string><string name="type_clover_patch">Zona de tréboles</string><string name="sync_local_only">Solo en este dispositivo</string><string name="sync_pending">Pendiente de sincronizar</string><string name="sync_synced">Sincronizado</string><string name="sync_failed">Error de sincronización</string>
+    <string name="wish_optional">Tu deseo (opcional)</string><string name="classification">Clasificación</string><string name="shared_map">Mapa compartido</string><string name="sharing_privacy_detail">Se compartirá el tipo reconocido por el clasificador y una zona redondeada de unos 150 m y, si lo eliges, un recorte de la foto sin datos GPS. El deseo, la identidad y las coordenadas precisas se quedan en tu dispositivo.</string><string name="finding_without_location">Este hallazgo no tiene ubicación y no se puede compartir.</string><string name="sign_in_to_share">Inicia sesión para compartir</string><string name="sharing_private">Privado</string><string name="sharing_pending">Publicando…</string><string name="sharing_anonymous">Compartido de forma anónima</string><string name="sharing_failed">Error al publicar</string><string name="error_operation">La operación ha fallado. Inténtalo de nuevo.</string><string name="error_publish_limit">Ya has compartido el número máximo de hallazgos por hoy. Vuelve a intentarlo mañana.</string><string name="error_save">No se pudo guardar. Comprueba la conexión e inténtalo de nuevo.</string><string name="saving">Guardando…</string><string name="save">Guardar</string><string name="delete">Eliminar</string><string name="back">Atrás</string>
+    <string name="map_private_title">Tu mapa de la suerte</string><string name="map_shared_title">El mapa compartido</string><string name="map_private_subtitle">Cada punto sigue disponible aunque no tengas conexión.</string><string name="map_shared_subtitle">Zonas anónimas comunicadas por la comunidad, nunca ubicaciones precisas.</string><string name="map_tab_mine">Míos</string><string name="map_tab_shared">Compartidos</string><plurals name="clover_count"><item quantity="one">%1$d trébol</item><item quantity="other">%1$d tréboles</item></plurals><plurals name="patch_count"><item quantity="one">%1$d zona</item><item quantity="other">%1$d zonas</item></plurals><plurals name="confirmation_count"><item quantity="one">%1$d confirmación</item><item quantity="other">%1$d confirmaciones</item></plurals>
+    <string name="map_local_name">Mapa local</string><string name="map_offline_note">Fondo esquemático • sin consumo de datos</string><string name="map_gesture_hint">Pellizca para ampliar • arrastra para mover • toca dos veces para restablecer</string><string name="map_filter_content_description">Filtrar hallazgos</string><string name="map_sign_in_title">Descubre zonas con suerte</string><string name="map_sign_in_description">Inicia sesión solo para consultar y contribuir al mapa anónimo. Tu mapa privado sigue disponible sin cuenta.</string><string name="sign_in_continue">Inicia sesión para continuar</string><string name="error_shared_map">El mapa compartido no está disponible. Comprueba la conexión e inténtalo de nuevo.</string><string name="map_no_recent_pins">No hay pines recientes</string><string name="map_first_shared_pin">Comparte un hallazgo para estrenar el mapa.</string><string name="map_zone_summary">Zona de unos %1$d m • %2$s</string><string name="map_published_by_you">Publicado por ti</string><string name="map_already_confirmed">Ya has confirmado este pin</string><string name="map_confirming">Confirmando…</string><string name="map_confirm_still_there">Confirmar que sigue allí</string>
+    <string name="map_privacy_note">Pines anónimos y redondeados. Las fotos son recortes sin datos GPS; los deseos y las identidades nunca se muestran.</string><string name="map_private_accessibility">Mapa sin conexión con %1$d tréboles de cuatro hojas y %2$d zonas de tréboles. Toca un punto para abrirlo.</string><string name="map_shared_accessibility">Mapa compartido anónimo con %1$d zonas, %2$d recientes. Toca un punto para ver los detalles.</string><string name="shared_type_four_leaf">Zona de tréboles de cuatro hojas</string><string name="freshness_fresh">Reciente</string><string name="freshness_fading">Necesita confirmación</string><string name="freshness_stale">Antiguo</string><string name="map_empty_title">El mapa espera su primer hallazgo</string><string name="map_empty_description">Busca una zona o un trébol de cuatro hojas: la ubicación precisa permanece en tu dispositivo.</string>
+    <string name="location_dialog_title">¿Guardar la ubicación?</string><string name="location_dialog_text">La ubicación sitúa el hallazgo en tu mapa y permanece en este dispositivo. Puedes continuar sin conceder acceso. En versiones antiguas de Android, también se necesita acceso a las fotos para copiar la imagen en la galería.</string><string name="allow">Permitir</string><string name="continue_without">Continuar sin ella</string><string name="error_photo">No se pudo hacer la foto. Inténtalo de nuevo.</string><string name="confirm_finding">Confirmar hallazgo</string><string name="type_patch_short">Zona</string><string name="wish_short_optional">Deseo (opcional)</string><string name="location_private_note">La ubicación se guarda solo en este dispositivo.</string><string name="confirm">Confirmar</string><string name="cancel">Cancelar</string><string name="camera_permission_description">La cámara se utiliza para buscar tréboles de cuatro hojas en tiempo real.</string><string name="camera_permission_button">Permitir cámara</string>
+    <string name="error_shared_map_update">No se pudo actualizar el mapa compartido.</string><string name="error_confirmation">La confirmación ha fallado o ya se envió desde esta cuenta.</string>    <string name="map_zoom_in">Ampliar</string><string name="map_zoom_out">Reducir</string><string name="map_zoom_reset">Restablecer zoom</string>
+    <string name="map_online_name">Mapa con ciudades y calles</string>
+    <string name="map_online_note">Se necesita conexión a Internet</string>
+    <string name="map_online_privacy_note">El proveedor del mapa puede saber qué zona estás viendo, pero no ve tus hallazgos ni tu información personal.</string>
+    <string name="map_no_private_pins_overlay">Aún no hay lugares guardados — puedes explorar el mapa igualmente</string>
+    <string name="map_shared_date">Fecha de la fuente: %1$s</string>
+    <string name="map_report_pin">Marcar como no adecuado</string>
+    <string name="map_report_title">¿Por qué este pin no es adecuado?</string>
+    <string name="map_report_explanation">Elige el motivo. Si el lugar simplemente ya no existe, usa «Ya no está».</string>
+    <string name="map_report_not_relevant">No trata de tréboles ni de una zona de tréboles</string>
+    <string name="map_report_false_information">Información falsa o engañosa</string>
+    <string name="map_report_offensive">Spam o contenido ofensivo</string>
+    <string name="map_reporting">Enviando aviso…</string>
+    <string name="map_report_sent">Aviso enviado</string>
+    <string name="error_report">No se pudo enviar el aviso. Comprueba la conexión e inténtalo de nuevo.</string>
+    <string name="map_mark_gone">Ya no está</string>
+    <string name="map_marking_gone">Enviando…</string>
+    <string name="map_gone_sent">Has indicado que ya no está</string>
+    <string name="map_gone_title">¿Ya no hay nada?</string>
+    <string name="map_gone_explanation">Úsalo si el prado o los tréboles ya no están. Cuando dos personas distintas lo indican, el pin desaparece del mapa. Nadie ve quién lo indicó.</string>
+    <string name="map_gone_confirm">Sí, ya no está</string>
+    <string name="map_gone_one">Una persona dice que ya no está.</string>
+    <string name="error_mark_gone">No se pudo enviar el aviso. Comprueba la conexión e inténtalo de nuevo.</string>
+    <string name="share_checking">Comprobando la foto…</string>
+    <string name="share_review_title">Comprueba lo que compartes</string>
+    <string name="share_review_type">En el mapa compartido: %1$s</string>
+    <string name="share_downgraded">El clasificador no reconoce un trébol de cuatro hojas en esta foto, así que aparecerá como prado de tréboles. Tu propia clasificación no cambia.</string>
+    <string name="share_review_text">Solo se publica este recorte alrededor de los tréboles, sin coordenadas GPS ni otros datos de la foto. Comprueba que no se vean casas, matrículas, personas ni lugares reconocibles.</string>
+    <string name="share_with_photo">Compartir con foto</string>
+    <string name="share_without_photo">Compartir sin foto</string>
+    <string name="error_share_no_clover">El clasificador no ve tréboles en esta foto, así que no se puede compartir.</string>
+    <string name="error_share_model_unavailable">El clasificador no está disponible: por ahora no se puede compartir.</string>
+    <string name="error_share_photo_unreadable">No se pudo leer la foto.</string>
+    <string name="error_type_not_confirmed">Guardado. En el mapa compartido sigue siendo un prado de tréboles: el clasificador no ve un trébol de cuatro hojas en esta foto.</string>
+    <string name="feedback_button">Enviar una sugerencia</string>
+    <string name="feedback_title">Ayúdanos a mejorar</string>
+    <string name="feedback_idea">Idea</string>
+    <string name="feedback_problem">Problema</string>
+    <string name="feedback_detection">Detección errónea</string>
+    <string name="feedback_question_idea">¿Qué echaste de menos hoy? ¿Qué te gustaría que hiciera la app?</string>
+    <string name="feedback_question_problem">¿Qué pasó y qué esperabas en su lugar?</string>
+    <string name="feedback_question_detection">¿Qué reconoció mal? ¿Un trébol de cuatro hojas que no vio, uno de tres tomado por cuatro, otra cosa?</string>
+    <string name="feedback_contact">Contacto para una respuesta (opcional)</string>
+    <string name="feedback_privacy">Tu mensaje llega al equipo sin tu nombre. Tu cuenta solo sirve para limitar el spam. Deja un contacto solo si quieres una respuesta.</string>
+    <string name="feedback_send">Enviar</string>
+    <string name="feedback_sending">Enviando…</string>
+    <string name="feedback_thanks_title">¡Gracias!</string>
+    <string name="feedback_thanks">Leemos cada mensaje. Ideas como la tuya deciden lo que construimos después.</string>
+    <string name="feedback_sign_in">Inicia sesión para enviar una sugerencia: así evitamos el spam. Tu nombre no se adjunta al mensaje.</string>
+    <string name="feedback_limit">Ya has enviado el número máximo de mensajes por hoy. Vuelve a intentarlo mañana.</string>
+    <string name="error_feedback">No se pudo enviar el mensaje. Comprueba la conexión e inténtalo de nuevo.</string>
+    <string name="captured_photo_description">La foto que se guardará</string>
+    <string name="info_button">Información y privacidad</string>
+    <string name="info_title">Información y privacidad</string>
+    <string name="info_privacy_title">Privacidad en breve</string>
+    <string name="info_privacy_summary">La imagen de la cámara se analiza en tu teléfono y nunca se sube. Las fotos, los deseos y las ubicaciones precisas se quedan en este dispositivo; cada foto se guarda también en tu galería. Puedes buscar y guardar sin cuenta. Solo cuando eliges compartir un hallazgo, el mapa compartido recibe su tipo, una zona redondeada de unos 150 m y, si lo eliges, un recorte de la foto sin datos GPS. Los demás usuarios nunca ven quién lo publicó; el administrador del proyecto puede vincular un pin a su cuenta. Sin publicidad ni analíticas. Puedes retirar lo que compartiste, o eliminar tu cuenta, en cualquier momento.</string>
+    <string name="info_privacy_full">Leer la política de privacidad completa</string>
+    <string name="info_contacts_title">Contacto</string>
+    <string name="info_contacts_text">Ideas, problemas o un trébol mal reconocido: escríbenos, leemos cada mensaje.</string>
+    <string name="info_contact_email">Escribe a %1$s</string>
+    <string name="info_licenses_title">Licencias y créditos</string>
+    <string name="info_version">Versión %1$s</string>
+    <string name="delete_account_title">Eliminar cuenta y datos</string>
+    <string name="delete_account_text">Retira del mapa compartido todos los hallazgos que compartiste, fotos incluidas, retira tus confirmaciones y avisos y elimina tu cuenta. Los hallazgos guardados en este teléfono se quedan aquí.</string>
+    <string name="delete_account_button">Eliminar cuenta</string>
+    <string name="delete_account_confirm_text">No se puede deshacer. Tus pines compartidos y sus fotos se retirarán y tu cuenta se eliminará. Puede que tengas que elegir de nuevo tu cuenta de Google para confirmar.</string>
+    <string name="delete_account_confirm">Eliminar definitivamente</string>
+    <string name="deleting_account">Eliminando…</string>
+    <string name="error_delete_account">No se pudo eliminar la cuenta. Comprueba la conexión e inténtalo de nuevo.</string>
+    <string name="account_deleted">Tu cuenta y tus hallazgos compartidos se han eliminado. Los hallazgos guardados en este teléfono siguen aquí.</string>
+    <string name="did_you_know">¿Sabías que…?</string>
+    <string name="another_fact">Otra</string>
+    <string name="preserve_button">Cómo conservarlo</string>
+    <string name="preserve_title">Cómo conservar tu trébol de cuatro hojas</string>
+    <string name="preserve_tips_title">Consejos</string>
+    <string-array name="clover_facts">
+        <item>En un recuento de unos 5,7 millones de tréboles en seis países europeos, aproximadamente 1 de cada 5.000 tenía cuatro hojas: el doble que el famoso «1 de cada 10.000».</item>
+        <item>El trébol de cuatro hojas no es una especie aparte: suele ser un trébol blanco (Trifolium repens) que creció con un folíolo de más.</item>
+        <item>En 2010, investigadores de la Universidad de Georgia localizaron el gen ligado a las cuatro hojas. Lo enmascara el de tres hojas, y la luz y la temperatura deciden si aparece la cuarta.</item>
+        <item>Una de las primeras menciones escritas es de 1620: John Melton escribió que quien encuentre en el campo una «hierba de cuatro hojas» pronto encontrará «algo bueno».</item>
+        <item>El shamrock irlandés tiene tres hojas, no cuatro. Estudios de 1893 y 1988 no hallaron una única especie «verdadera»: se recogía sobre todo trébol menor y trébol blanco.</item>
+        <item>Según la tradición, san Patricio usó el shamrock de tres hojas para explicar la Trinidad, pero la historia aparece por escrito solo en 1726, más de mil años después.</item>
+        <item>Según la tradición, las cuatro hojas representan la fe, la esperanza, el amor y la suerte.</item>
+        <item>Según una leyenda, Eva se llevó un trébol de cuatro hojas al salir del jardín del Edén, como recuerdo del Paraíso.</item>
+        <item>En el folclore británico e irlandés, llevar un trébol de cuatro hojas permite ver a las hadas y descubrir sus hechizos.</item>
+        <item>En Alemania se regala «Glücksklee» en Año Nuevo. No es un trébol de verdad sino Oxalis tetraphylla, una planta de hojas siempre con cuatro lóbulos.</item>
+        <item>El récord Guinness del trébol con más hojas es de 63, logrado por Yoshiharu Watanabe en Japón en 2023.</item>
+        <item>En japonés el trébol blanco se llama «shirotsumekusa», «hierba blanca de embalaje»: en el periodo Edo, el trébol seco protegía el vidrio holandés enviado a Nagasaki.</item>
+    </string-array>
+    <string-array name="preserve_steps">
+        <item>Prénsalo lo antes posible, en pocas horas. Mientras tanto, guárdalo plano dentro de un papel doblado, no en el bolsillo.</item>
+        <item>Si está húmedo de rocío o lluvia, sécalo con suaves toques.</item>
+        <item>Extiende bien los folíolos entre dos hojas absorbentes (papel secante, un filtro de café o papel de horno). Evita el contacto con las páginas: la tinta y el papel ácido pueden mancharlo.</item>
+        <item>Ciérralo en el centro de un libro pesado y añade más peso encima. Una prensa de flores es aún mejor.</item>
+        <item>Cambia el papel absorbente cada día los primeros días y luego cada pocos días, para evitar moho y oscurecimiento.</item>
+        <item>Déjalo prensado en un lugar seco de 1 a 3 semanas, hasta que esté completamente seco y rígido.</item>
+        <item>Protégelo solo cuando esté bien seco: plastifícalo, enmárcalo bajo cristal o guárdalo en una funda transparente.</item>
+    </string-array>
+    <string-array name="preserve_tips">
+        <item>Mantenlo lejos del sol: el verde se apaga con el tiempo de todos modos, pero la luz lo acelera. El plastificado conserva mejor el color.</item>
+        <item>Séllalo solo cuando esté completamente seco, o se empañará bajo el plástico o el cristal.</item>
+        <item>Existe el método rápido en el microondas, pero se sobrecalienta fácilmente y un libro en el microondas es arriesgado: la prensa lenta es más segura.</item>
+    </string-array>
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_find_title">Cuando encuentras un trébol de cuatro hojas</string>
+    <string name="settings_sound">Sonido</string>
+    <string name="settings_sound_hint">Una breve melodía. Sigue el volumen multimedia del teléfono.</string>
+    <string name="settings_vibration">Vibración</string>
+    <string name="settings_vibration_hint">Una breve vibración, para notarlo incluso sin sonido.</string>
+    <string name="settings_sensitivity_title">Sensibilidad de la búsqueda</string>
+    <string name="settings_sensitivity_intro">Cuán segura debe estar la app antes de anunciar un trébol de cuatro hojas. Cada trébol se muestra siempre con un cuadrado suave.</string>
+    <string name="sensitivity_careful">Prudente</string>
+    <string name="sensitivity_careful_hint">Menos falsas alarmas: tarda un poco más y puede perder alguno.</string>
+    <string name="sensitivity_normal">Normal</string>
+    <string name="sensitivity_normal_hint">El equilibrio recomendado.</string>
+    <string name="sensitivity_sensitive">Sensible</string>
+    <string name="sensitivity_sensitive_hint">Encuentra más, pero también anuncia tréboles que resultan tener tres hojas.</string>
+    <string name="share_with_friends">Compartir con amigos</string>
+    <string name="share_chooser_title">Comparte tu suerte</string>
+    <string name="share_text_four_leaf">¡He encontrado un trébol de cuatro hojas! ☘ Busca tú también la suerte con %1$s: %2$s</string>
+    <string name="share_text_patch">¡He encontrado un prado de tréboles! ☘ Ayúdame a buscar la suerte, instala tú también %1$s: %2$s</string>
+    <string name="share_card_footer">Encontrado con Lucky Prospector</string>
+    <string name="error_share_card">No se pudo preparar la imagen.</string>
+    <string-array name="lucky_wishes">
+        <item>Que esta pequeña hoja te traiga una gran sonrisa.</item>
+        <item>Hoy la suerte te ha encontrado. Guárdala cerca.</item>
+        <item>Cuatro hojas, cuatro cosas buenas en camino.</item>
+        <item>Que tu próximo paso sea tan afortunado como este.</item>
+        <item>Un poco de suerte verde, solo para ti.</item>
+        <item>Que el día siga tan luminoso como este hallazgo.</item>
+        <item>Miraste con atención, y la suerte te miró a ti.</item>
+        <item>Que las buenas noticias te encuentren tan fácil como tú lo encontraste.</item>
+        <item>Paciencia, buen ojo y una pizca de magia.</item>
+        <item>Que este trébol te recuerde que las cosas raras suceden.</item>
+        <item>La suerte quiere a quien sigue buscando.</item>
+        <item>Uno entre miles, un poco como tú.</item>
+        <item>Que tus deseos crezcan como el trébol en primavera.</item>
+        <item>Una hoja afortunada para un día afortunado.</item>
+        <item>Que este hallazgo te traiga calma y buena compañía.</item>
+        <item>Guárdalo en un libro, y en tu memoria.</item>
+        <item>Que siempre encuentres lo que buscas.</item>
+        <item>Hoy el prado te eligió a ti.</item>
+        <item>Que la suerte camine a tu lado en cada sendero.</item>
+        <item>Hoja pequeña, gran deseo.</item>
+        <item>Que este trébol lleve tu deseo un poco más lejos.</item>
+        <item>Por muchos más días afortunados como este.</item>
+        <item>Que puedas compartir esta suerte con quien quieres.</item>
+        <item>Verde por la esperanza, cuatro por la suerte.</item>
+        <item>Que las pequeñas sorpresas no se acaben nunca.</item>
+        <item>Encontrado por ti, deseado para todos.</item>
+        <item>Que tu corazón sea ligero como esta hoja.</item>
+        <item>Cada trébol es un pequeño motivo para sonreír.</item>
+        <item>Que sea el comienzo de una racha de suerte.</item>
+        <item>La suerte es discreta. Tú la notaste.</item>
+    </string-array>
+    <string name="add_manually">Añadir a mano</string>
+    <string name="manual_title">Añadir un hallazgo</string>
+    <string name="manual_pick_photo">Elegir una foto</string>
+    <string name="manual_change_photo">Cambiar foto</string>
+    <string name="manual_date">Fecha: %1$s</string>
+    <string name="manual_location_title">¿Dónde lo encontraste?</string>
+    <string name="location_from_photo">Ubicación guardada en la foto</string>
+    <string name="location_current">Mi ubicación actual</string>
+    <string name="location_address">Buscar una dirección o un parque</string>
+    <string name="location_none">Sin ubicación</string>
+    <string name="locating">Buscando tu ubicación…</string>
+    <string name="address_hint">Dirección o nombre del parque</string>
+    <string name="address_search">Buscar</string>
+    <string name="address_searching">…</string>
+    <string name="address_no_results">No se encontró ningún lugar. Prueba a añadir la ciudad.</string>
+    <string name="address_privacy">La búsqueda pasa por el servicio de ubicación del teléfono (normalmente Google). La ubicación se guarda solo en este teléfono.</string>
+    <string name="error_location">Ubicación no disponible.</string>
+    <string name="expand">Mostrar</string>
+    <string name="collapse">Ocultar</string>
+    <string name="community_rules_title">Normas del mapa compartido</string>
+    <string name="community_rules_accept">Acepto las normas del mapa compartido</string>
+    <string-array name="community_rules">
+        <item>Solo tréboles: nada de personas, caras, casas ni matrículas.</item>
+        <item>Nada de jardines privados ni lugares donde no se puede entrar.</item>
+        <item>Nada de hallazgos falsos, publicidad ni contenido ofensivo.</item>
+        <item>Los pines denunciados por tres personas se eliminan.</item>
+    </string-array>
+    <string name="camera_hint_move_closer">Acércate: los tréboles se ven demasiado pequeños</string>
+    <string name="camera_hint_move_back">Aléjate un poco para ver más césped</string>
+    <string name="search_size_guide">Tamaño del trébol</string>
+    <string name="search_fps">IA: %1$.1f fps</string>
+    <string name="settings_resolution_title">Resolución de la búsqueda</string>
+    <string name="settings_resolution_intro">Elige el flujo de cámara que analiza la IA. Durante la búsqueda verás la resolución real y los fps de la IA. La vista previa puede ser más fluida. La cámara usa el tamaño compatible más cercano.</string>
+    <string name="resolution_standard">Estándar</string>
+    <string name="resolution_standard_hint">Menos procesamiento, con el trébol encuadrado de cerca.</string>
+    <string name="resolution_high">Alta</string>
+    <string name="resolution_high_hint">Más detalle; la velocidad depende del teléfono y las condiciones.</string>
+    <string name="resolution_max">Detalle 4:3</string>
+    <string name="resolution_max_hint">Más píxeles que Full HD, en formato de sensor 4:3. Requiere más procesamiento.</string>
+    <string name="resolution_full_hd">Full HD</string>
+    <string name="resolution_full_hd_hint">Predeterminada · 16:9. Equilibrio entre detalle y velocidad de análisis.</string>
+    <string name="resolution_camera_max">Máxima de la cámara</string>
+    <string name="resolution_camera_max_hint">La resolución más alta compatible con vista previa, análisis IA y fotos simultáneos. Puede ralentizar el análisis; no es el modo de megapíxeles del sensor.</string>
+    <string name="search_no_clover_to_save">Ahora no se detectan tréboles. Encuadra uno antes de guardar.</string>
+    <string name="search_save_requires_clover">Encuadra un trébol para poder guardar.</string>
+    <string name="camera_zoom_in">Acercar</string>
+    <string name="camera_zoom_out">Alejar</string>
+    <string name="camera_zoom_ratio">%1$.1f×</string>
+    <string name="camera_zoom_error">No se pudo cambiar el zoom. Inténtalo de nuevo.</string>
+    <string name="camera_start_error">No se pudo iniciar la cámara. Prueba una resolución menor en Ajustes.</string>
+    <string name="search_model_confidence">Confianza de la IA: %1$d%%</string>
+    <string name="search_check_leaves">Comprueba las cuatro hojas: la IA puede equivocarse.</string>
+    <string name="info_model_photo_credits">Créditos de las fotos de entrenamiento</string>
+</resources>

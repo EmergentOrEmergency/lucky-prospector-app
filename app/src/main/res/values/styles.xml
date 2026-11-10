@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.LuckyProspector.Base" parent="android:style/Theme.Material.Light.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:statusBarColor">#052F20</item>
+        <!-- Android 15+ renders the status bar transparently over the window.
+             This supplies the actual forest background visible behind it. -->
+        <item name="android:windowBackground">#052F20</item>
+        <item name="android:navigationBarColor">#052F20</item>
+    </style>
+    <style name="Theme.LuckyProspector" parent="Theme.LuckyProspector.Base" />
+</resources>
+

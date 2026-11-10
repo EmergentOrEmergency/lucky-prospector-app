@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_search">Cerca</string><string name="nav_findings">Ritrovamenti</string><string name="nav_map">Mappa</string><string name="nav_profile">Profilo</string>
+    <string name="language_button">Lingua: %1$s</string><string name="language_dialog_title">Lingua dell’app</string><string name="language_system">Lingua del dispositivo</string>
+    <string name="language_english">English</string><string name="language_italian">Italiano</string><string name="language_french">Français</string><string name="language_german">Deutsch</string><string name="language_spanish">Español</string><string name="close">Chiudi</string>
+    <string name="profile_title">Il tuo taccuino fortunato</string><string name="profile_description">Cerca e salva senza account. Accedi solo per vedere e pubblicare sulla mappa condivisa, o per inviare un suggerimento.</string><string name="profile_privacy">La condivisione è anonima: desiderio e posizione precisa non lasciano mai il dispositivo. Una foto viene condivisa solo se lo scegli, ritagliata sui trifogli e senza dati GPS.</string>
+    <string name="sign_in_google">Accedi con Google</string><string name="signing_in">Accesso…</string><string name="account_connected">Account collegato</string><string name="sign_out">Esci</string><string name="error_sign_in">Accesso non riuscito. Riprova.</string><string name="error_sign_out">Disconnessione non riuscita. Riprova.</string>
+    <string name="gallery_empty_title">La fortuna lascia tracce</string><string name="gallery_empty_description">Inquadra il prato e salva qui ogni scoperta. Foto e desideri restano disponibili anche offline.</string><string name="private_by_default">Privato per impostazione predefinita</string><string name="start_search">Inizia la ricerca</string><string name="gallery_title">Il tuo taccuino fortunato</string>
+    <plurals name="finding_count"><item quantity="one">%1$d ritrovamento custodito sul dispositivo</item><item quantity="other">%1$d ritrovamenti custoditi sul dispositivo</item></plurals>
+    <string name="wish_prefix">Desiderio: %1$s</string><string name="corrected_prefix">Corretto: %1$s</string><string name="type_four_leaf_clover">Quadrifoglio</string><string name="type_clover_patch">Prato di trifogli</string>
+    <string name="sync_local_only">Solo sul dispositivo</string><string name="sync_pending">Da sincronizzare</string><string name="sync_synced">Sincronizzato</string><string name="sync_failed">Errore sync</string>
+    <string name="wish_optional">Il tuo desiderio (facoltativo)</string><string name="classification">Classificazione</string><string name="shared_map">Mappa condivisa</string><string name="sharing_privacy_detail">Condividerai il tipo riconosciuto dal classificatore e una zona arrotondata di circa 150 m, più, se lo scegli, un ritaglio della foto senza dati GPS. Desiderio, identità e coordinate precise restano sul telefono.</string>
+    <string name="finding_without_location">Questo ritrovamento non ha una posizione e non può essere condiviso.</string><string name="sign_in_to_share">Accedi per condividere</string><string name="sharing_private">Privato</string><string name="sharing_pending">Pubblicazione in corso</string><string name="sharing_anonymous">Condiviso in forma anonima</string><string name="sharing_failed">Pubblicazione non riuscita</string>
+    <string name="error_operation">Operazione non riuscita. Riprova.</string><string name="error_publish_limit">Hai già condiviso il numero massimo di ritrovamenti per oggi. Riprova domani.</string><string name="error_save">Salvataggio non riuscito. Controlla la connessione e riprova.</string><string name="saving">Salvo…</string><string name="save">Salva</string><string name="delete">Elimina</string><string name="back">Indietro</string>
+    <string name="map_private_title">La tua mappa fortunata</string><string name="map_shared_title">La mappa condivisa</string><string name="map_private_subtitle">Ogni punto resta visibile anche quando sei offline.</string><string name="map_shared_subtitle">Zone anonime segnalate dalla comunità, mai posizioni precise.</string><string name="map_tab_mine">I miei</string><string name="map_tab_shared">Condivisi</string>
+    <plurals name="clover_count"><item quantity="one">%1$d quadrifoglio</item><item quantity="other">%1$d quadrifogli</item></plurals><plurals name="patch_count"><item quantity="one">%1$d prato</item><item quantity="other">%1$d prati</item></plurals><plurals name="confirmation_count"><item quantity="one">%1$d conferma</item><item quantity="other">%1$d conferme</item></plurals>
+    <string name="map_local_name">Mappa locale</string><string name="map_offline_note">Sfondo schematico • nessun consumo dati</string><string name="map_gesture_hint">Pizzica per zoomare • trascina per muovere • doppio tocco per azzerare</string><string name="map_zoom_in">Aumenta zoom</string><string name="map_zoom_out">Riduci zoom</string><string name="map_zoom_reset">Azzera zoom</string><string name="map_filter_content_description">Filtra i ritrovamenti</string>
+    <string name="map_sign_in_title">Scopri le zone fortunate</string><string name="map_sign_in_description">Accedi solo per leggere e contribuire alla mappa anonima. La tua mappa privata resta disponibile senza account.</string><string name="sign_in_continue">Accedi per continuare</string><string name="error_shared_map">La mappa condivisa non è disponibile. Controlla la connessione e riprova.</string>
+    <string name="map_no_recent_pins">Nessun pin recente</string><string name="map_first_shared_pin">Condividi un ritrovamento per inaugurare la mappa.</string><string name="map_zone_summary">Zona di circa %1$d m • %2$s</string><string name="map_published_by_you">Pubblicato da te</string><string name="map_already_confirmed">Hai già confermato questo pin</string><string name="map_confirming">Conferma…</string><string name="map_confirm_still_there">Conferma che c’è ancora</string>
+    <string name="map_privacy_note">Pin anonimi e arrotondati. Le foto sono ritagli senza dati GPS; desideri e identità non vengono mai mostrati.</string><string name="map_private_accessibility">Mappa offline con %1$d quadrifogli e %2$d prati di trifoglio. Tocca un punto per aprirlo.</string><string name="map_shared_accessibility">Mappa condivisa anonima con %1$d zone, di cui %2$d recenti. Tocca un punto per i dettagli.</string>
+    <string name="shared_type_four_leaf">Zona di quadrifogli</string><string name="freshness_fresh">Recente</string><string name="freshness_fading">Da riconfermare</string><string name="freshness_stale">Datato</string><string name="map_empty_title">La mappa aspetta il primo ritrovamento</string><string name="map_empty_description">Cerca un prato o un quadrifoglio: la posizione precisa resta sul telefono.</string>
+    <string name="camera_preparing">Sto preparando la fotocamera…</string><string name="camera_hint_more_light">Serve più luce</string><string name="camera_hint_hold_still">Tieni fermo il telefono</string><string name="search_four_leaf_possible">Possibile quadrifoglio. Avvicinati e tieni fermo.</string><string name="search_four_leaf_confirmed">Possibile quadrifoglio · rilevamento stabile</string><string name="search_four_leaf_confirmed_many">%1$d possibili quadrifogli · rilevamenti stabili</string><string name="search_clover_patch">Sei nel posto giusto: continua a cercare.</string><string name="search_ai_on_device">Ricerca AI sul dispositivo</string><string name="search_demo_mode">Modalità demo</string><string name="search_model_unavailable">Modello non disponibile: modalità demo</string><string name="search_taking_photo">Scatto…</string><string name="search_save_finding">Salva ritrovamento</string>
+    <string name="location_dialog_title">Salvare il luogo?</string><string name="location_dialog_text">La posizione serve a mostrare il ritrovamento sulla tua mappa e resta sul telefono. Puoi continuare anche senza concederla. Sui vecchi Android l’accesso alle foto serve anche alla copia nella galleria.</string><string name="allow">Consenti</string><string name="continue_without">Continua senza</string><string name="error_photo">Scatto non riuscito. Riprova.</string>
+    <string name="confirm_finding">Conferma ritrovamento</string><string name="type_patch_short">Prato</string><string name="wish_short_optional">Desiderio (facoltativo)</string><string name="location_private_note">La posizione viene salvata solo sul dispositivo.</string><string name="confirm">Conferma</string><string name="cancel">Annulla</string><string name="camera_permission_description">La fotocamera serve per cercare quadrifogli in tempo reale.</string><string name="camera_permission_button">Consenti fotocamera</string>
+    <string name="error_shared_map_update">Impossibile aggiornare la mappa condivisa.</string><string name="error_confirmation">Conferma non riuscita o già inviata da questo account.</string>    <string-array name="search_encouragements"><item>Cerca, cerca… la fortuna si nasconde tra le foglie.</item><item>Continua: il prossimo potrebbe essere quello giusto.</item><item>Osserva con calma, foglia dopo foglia.</item><item>La fortuna ama chi non si arrende.</item><item>Prova più vicino e cambia lentamente angolazione.</item></string-array>
+    <string name="map_online_name">Mappa con città e strade</string>
+    <string name="map_online_note">Serve una connessione internet</string>
+    <string name="map_online_privacy_note">Chi fornisce la mappa può sapere quale zona stai guardando, ma non vede i tuoi ritrovamenti né le tue informazioni personali.</string>
+    <string name="map_no_private_pins_overlay">Nessun luogo salvato — puoi comunque esplorare la mappa</string>
+    <string name="map_shared_date">Data della fonte: %1$s</string>
+    <string name="map_report_pin">Segnala come non adatto</string>
+    <string name="map_report_title">Perché questo pin non è adatto?</string>
+    <string name="map_report_explanation">Scegli il motivo. Se il luogo semplicemente non esiste più, usa invece «Non c’è più».</string>
+    <string name="map_report_not_relevant">Non riguarda quadrifogli o prati di trifogli</string>
+    <string name="map_report_false_information">Informazioni false o fuorvianti</string>
+    <string name="map_report_offensive">Spam o contenuto offensivo</string>
+    <string name="map_reporting">Invio segnalazione…</string>
+    <string name="map_report_sent">Segnalazione inviata</string>
+    <string name="error_report">Impossibile inviare la segnalazione. Controlla la connessione e riprova.</string>
+    <string name="map_mark_gone">Non c’è più</string>
+    <string name="map_marking_gone">Invio…</string>
+    <string name="map_gone_sent">Hai segnalato che non c’è più</string>
+    <string name="map_gone_title">Non c’è più niente?</string>
+    <string name="map_gone_explanation">Usalo se il prato o i quadrifogli non ci sono più. Quando due persone diverse lo segnalano, il pin sparisce dalla mappa. Nessuno vede chi l’ha segnalato.</string>
+    <string name="map_gone_confirm">Sì, non c’è più</string>
+    <string name="map_gone_one">Una persona dice che qui non c’è più.</string>
+    <string name="error_mark_gone">Segnalazione non inviata. Controlla la connessione e riprova.</string>
+    <string name="share_checking">Controllo la foto…</string>
+    <string name="share_review_title">Controlla cosa condividi</string>
+    <string name="share_review_type">Sulla mappa condivisa: %1$s</string>
+    <string name="share_downgraded">Il classificatore non riconosce un quadrifoglio in questa foto, quindi comparirà come prato di trifogli. La tua classificazione resta com’è.</string>
+    <string name="share_review_text">Viene pubblicato solo questo ritaglio attorno ai trifogli, senza coordinate GPS né altri dati della foto. Controlla che non si vedano case, targhe, persone o luoghi riconoscibili.</string>
+    <string name="share_with_photo">Condividi con foto</string>
+    <string name="share_without_photo">Condividi senza foto</string>
+    <string name="error_share_no_clover">Il classificatore non vede trifogli in questa foto, quindi non può essere condivisa.</string>
+    <string name="error_share_model_unavailable">Il classificatore non è disponibile: per ora non è possibile condividere.</string>
+    <string name="error_share_photo_unreadable">Impossibile leggere la foto.</string>
+    <string name="error_type_not_confirmed">Salvato. Sulla mappa condivisa resta prato di trifogli: il classificatore non vede un quadrifoglio in questa foto.</string>
+    <string name="feedback_button">Invia un suggerimento</string>
+    <string name="feedback_title">Aiutaci a migliorare</string>
+    <string name="feedback_idea">Idea</string>
+    <string name="feedback_problem">Problema</string>
+    <string name="feedback_detection">Riconoscimento sbagliato</string>
+    <string name="feedback_question_idea">Cosa ti è mancato oggi? Cosa vorresti che l’app facesse?</string>
+    <string name="feedback_question_problem">Cosa è successo, e cosa ti aspettavi invece?</string>
+    <string name="feedback_question_detection">Cosa ha sbagliato? Un quadrifoglio non visto, un trifoglio scambiato per quadrifoglio, altro?</string>
+    <string name="feedback_contact">Contatto per una risposta (facoltativo)</string>
+    <string name="feedback_privacy">Il messaggio arriva al team senza il tuo nome. L’account serve solo a limitare lo spam. Lascia un contatto solo se vuoi una risposta.</string>
+    <string name="feedback_send">Invia</string>
+    <string name="feedback_sending">Invio…</string>
+    <string name="feedback_thanks_title">Grazie!</string>
+    <string name="feedback_thanks">Leggiamo ogni messaggio. Idee come la tua decidono cosa costruiamo dopo.</string>
+    <string name="feedback_sign_in">Accedi per inviare un suggerimento: serve a tenere lontano lo spam. Il tuo nome non viene allegato al messaggio.</string>
+    <string name="feedback_limit">Hai già inviato il numero massimo di messaggi per oggi. Riprova domani.</string>
+    <string name="error_feedback">Messaggio non inviato. Controlla la connessione e riprova.</string>
+    <string name="captured_photo_description">La foto che verrà salvata</string>
+    <string name="info_button">Informazioni e privacy</string>
+    <string name="info_title">Informazioni e privacy</string>
+    <string name="info_privacy_title">Privacy in breve</string>
+    <string name="info_privacy_summary">L’immagine della fotocamera viene analizzata sul telefono e non viene mai caricata. Foto, desideri e posizioni precise restano su questo dispositivo; ogni foto viene salvata anche nella tua galleria. Puoi cercare e salvare senza account. Solo quando scegli di condividere un ritrovamento, la mappa condivisa riceve il tipo, una zona arrotondata di circa 150 m e, se lo scegli, un ritaglio della foto senza dati GPS. Gli altri utenti non vedono mai chi l’ha pubblicato; l’amministratore del progetto può collegare un pin al suo account. Niente pubblicità, niente analytics. Puoi ritirare ciò che hai condiviso, o eliminare l’account, in qualsiasi momento.</string>
+    <string name="info_privacy_full">Leggi l’informativa completa</string>
+    <string name="info_contacts_title">Contatti</string>
+    <string name="info_contacts_text">Idee, problemi o un trifoglio riconosciuto male: scrivici, leggiamo ogni messaggio.</string>
+    <string name="info_contact_email">Scrivi a %1$s</string>
+    <string name="info_licenses_title">Licenze e riconoscimenti</string>
+    <string name="info_version">Versione %1$s</string>
+    <string name="delete_account_title">Elimina account e dati</string>
+    <string name="delete_account_text">Rimuove dalla mappa condivisa tutti i ritrovamenti che hai condiviso, foto comprese, ritira le tue conferme e segnalazioni ed elimina il tuo account. I ritrovamenti salvati su questo telefono restano qui.</string>
+    <string name="delete_account_button">Elimina account</string>
+    <string name="delete_account_confirm_text">L’operazione non si può annullare. I tuoi pin condivisi e le loro foto verranno rimossi e l’account eliminato. Potrebbe esserti chiesto di scegliere di nuovo il tuo account Google per confermare.</string>
+    <string name="delete_account_confirm">Elimina definitivamente</string>
+    <string name="deleting_account">Eliminazione…</string>
+    <string name="error_delete_account">Impossibile eliminare l’account. Controlla la connessione e riprova.</string>
+    <string name="account_deleted">Account e ritrovamenti condivisi eliminati. I ritrovamenti salvati su questo telefono sono ancora qui.</string>
+    <string name="did_you_know">Lo sapevi?</string>
+    <string name="another_fact">Un’altra</string>
+    <string name="preserve_button">Come conservarlo</string>
+    <string name="preserve_title">Come conservare il tuo quadrifoglio</string>
+    <string name="preserve_tips_title">Consigli</string>
+    <string-array name="clover_facts">
+        <item>In un conteggio di circa 5,7 milioni di trifogli in sei Paesi europei, circa 1 su 5.000 aveva quattro foglie: il doppio del famoso “1 su 10.000”.</item>
+        <item>Il quadrifoglio non è una specie a parte: di solito è un trifoglio bianco (Trifolium repens) cresciuto con una foglia in più.</item>
+        <item>Nel 2010 i ricercatori dell’Università della Georgia hanno localizzato il gene legato alle quattro foglie. È mascherato da quello delle tre foglie, e luce e temperatura decidono se la quarta compare.</item>
+        <item>Una delle prime citazioni scritte risale al 1620: John Melton scriveva che chi trova nei campi «un’erba a quattro foglie» troverà presto «qualcosa di buono».</item>
+        <item>Lo shamrock irlandese ha tre foglie, non quattro. Le indagini del 1893 e del 1988 non hanno trovato un’unica specie “vera”: si raccoglievano soprattutto trifoglio minore e trifoglio bianco.</item>
+        <item>Secondo la tradizione, San Patrizio usò lo shamrock a tre foglie per spiegare la Trinità: ma il racconto compare per iscritto solo nel 1726, oltre mille anni dopo.</item>
+        <item>Secondo la tradizione, le quattro foglie rappresentano fede, speranza, amore e fortuna.</item>
+        <item>Secondo una leggenda, Eva portò con sé un quadrifoglio uscendo dal giardino dell’Eden, come ricordo del Paradiso.</item>
+        <item>Nel folclore britannico e irlandese, chi porta con sé un quadrifoglio può vedere le fate e smascherarne gli incantesimi.</item>
+        <item>In Germania a Capodanno si regala il “Glücksklee”. Non è un vero trifoglio ma Oxalis tetraphylla, una pianta con foglie sempre a quattro lobi.</item>
+        <item>Il record Guinness per il trifoglio con più foglie è di 63, stabilito da Yoshiharu Watanabe in Giappone nel 2023.</item>
+        <item>In giapponese il trifoglio bianco si chiama “shirotsumekusa”, “erba bianca da imballaggio”: nel periodo Edo il trifoglio secco proteggeva i vetri olandesi spediti a Nagasaki.</item>
+    </string-array>
+    <string-array name="preserve_steps">
+        <item>Mettilo sotto pressa il prima possibile, entro poche ore. Nel frattempo tienilo piatto in un foglio di carta piegato, non in tasca.</item>
+        <item>Se è umido di rugiada o pioggia, asciugalo tamponando piano.</item>
+        <item>Distendi bene le foglie tra due fogli assorbenti (carta assorbente, un filtro da caffè o carta da forno). Non metterlo a contatto con le pagine: inchiostro e carta acida possono macchiarlo.</item>
+        <item>Chiudilo al centro di un libro pesante e aggiungi altro peso sopra. Una pressa per fiori è ancora meglio.</item>
+        <item>Cambia la carta assorbente ogni giorno nei primi giorni, poi ogni pochi giorni, per evitare muffa e annerimento.</item>
+        <item>Lascialo in pressa in un luogo asciutto per 1–3 settimane, finché è completamente secco e rigido.</item>
+        <item>Proteggilo solo quando è ben secco: plastificalo, mettilo sotto vetro in una cornice o in una busta trasparente.</item>
+    </string-array>
+    <string-array name="preserve_tips">
+        <item>Tienilo lontano dal sole: il verde sbiadisce comunque col tempo, ma la luce lo accelera. La plastificazione conserva meglio il colore.</item>
+        <item>Sigillalo solo quando è completamente secco, altrimenti si appanna sotto la plastica o il vetro.</item>
+        <item>Esiste il metodo veloce al microonde, ma surriscalda facilmente e un libro nel microonde è rischioso: la pressa lenta è più sicura.</item>
+    </string-array>
+    <string name="settings_title">Impostazioni</string>
+    <string name="settings_find_title">Quando trovi un quadrifoglio</string>
+    <string name="settings_sound">Suono</string>
+    <string name="settings_sound_hint">Un breve suono. Segue il volume multimediale del telefono.</string>
+    <string name="settings_vibration">Vibrazione</string>
+    <string name="settings_vibration_hint">Una breve vibrazione, per accorgertene anche senza audio.</string>
+    <string name="settings_sensitivity_title">Sensibilità della ricerca</string>
+    <string name="settings_sensitivity_intro">Quanto l’app deve essere sicura prima di annunciare un quadrifoglio. Ogni trifoglio viene sempre mostrato con un quadratino leggero.</string>
+    <string name="sensitivity_careful">Prudente</string>
+    <string name="sensitivity_careful_hint">Meno falsi allarmi: ci mette un po’ di più e può perdere qualche quadrifoglio.</string>
+    <string name="sensitivity_normal">Normale</string>
+    <string name="sensitivity_normal_hint">L’equilibrio consigliato.</string>
+    <string name="sensitivity_sensitive">Sensibile</string>
+    <string name="sensitivity_sensitive_hint">Ne trova di più, ma annuncia anche trifogli che poi hanno tre foglie.</string>
+    <string name="share_with_friends">Condividi con gli amici</string>
+    <string name="share_chooser_title">Condividi la tua fortuna</string>
+    <string name="share_text_four_leaf">Ho trovato un quadrifoglio! ☘ Cerca anche tu la fortuna con %1$s: %2$s</string>
+    <string name="share_text_patch">Ho trovato un prato di trifogli! ☘ Aiutami a cercare la fortuna, installa anche tu %1$s: %2$s</string>
+    <string name="share_card_footer">Trovato con Lucky Prospector</string>
+    <string name="error_share_card">Impossibile preparare l’immagine.</string>
+    <string-array name="lucky_wishes">
+        <item>Che questa piccola foglia ti porti un grande sorriso.</item>
+        <item>Oggi la fortuna ti ha trovato. Tienila stretta.</item>
+        <item>Quattro foglie, quattro cose belle in arrivo.</item>
+        <item>Che il tuo prossimo passo sia fortunato come questo.</item>
+        <item>Un po’ di fortuna verde, tutta per te.</item>
+        <item>Che la giornata resti luminosa come questo ritrovamento.</item>
+        <item>Hai guardato bene, e la fortuna ha guardato te.</item>
+        <item>Che le belle notizie ti trovino facilmente come hai trovato lui.</item>
+        <item>Pazienza, occhio attento e un pizzico di magia.</item>
+        <item>Che questo quadrifoglio ti ricordi che le cose rare succedono.</item>
+        <item>La fortuna ama chi continua a cercare.</item>
+        <item>Uno su migliaia, un po’ come te.</item>
+        <item>Che i tuoi desideri crescano come trifogli a primavera.</item>
+        <item>Una foglia fortunata per una giornata fortunata.</item>
+        <item>Che questo ritrovamento ti porti serenità e buona compagnia.</item>
+        <item>Conservalo in un libro, e nei ricordi.</item>
+        <item>Che tu possa trovare sempre ciò che cerchi.</item>
+        <item>Oggi il prato ha scelto te.</item>
+        <item>Che la fortuna cammini accanto a te su ogni sentiero.</item>
+        <item>Piccola foglia, grande desiderio.</item>
+        <item>Che questo quadrifoglio porti il tuo desiderio un po’ più lontano.</item>
+        <item>A tanti altri giorni fortunati come questo.</item>
+        <item>Che tu possa condividere questa fortuna con chi ami.</item>
+        <item>Verde per la speranza, quattro per la fortuna.</item>
+        <item>Che le piccole sorprese non finiscano mai.</item>
+        <item>Trovato da te, augurato a tutti.</item>
+        <item>Che il tuo cuore sia leggero come questa foglia.</item>
+        <item>Ogni quadrifoglio è un piccolo motivo per sorridere.</item>
+        <item>Che sia l’inizio di una serie fortunata.</item>
+        <item>La fortuna fa poco rumore. Tu l’hai notata.</item>
+    </string-array>
+    <string name="add_manually">Aggiungi a mano</string>
+    <string name="manual_title">Aggiungi un ritrovamento</string>
+    <string name="manual_pick_photo">Scegli una foto</string>
+    <string name="manual_change_photo">Cambia foto</string>
+    <string name="manual_date">Data: %1$s</string>
+    <string name="manual_location_title">Dove l’hai trovato?</string>
+    <string name="location_from_photo">Posizione salvata nella foto</string>
+    <string name="location_current">La mia posizione attuale</string>
+    <string name="location_address">Cerca un indirizzo o un parco</string>
+    <string name="location_none">Senza posizione</string>
+    <string name="locating">Cerco la tua posizione…</string>
+    <string name="address_hint">Indirizzo o nome del parco</string>
+    <string name="address_search">Cerca</string>
+    <string name="address_searching">…</string>
+    <string name="address_no_results">Nessun luogo trovato. Prova ad aggiungere la città.</string>
+    <string name="address_privacy">La ricerca passa dal servizio di localizzazione del telefono (di solito Google). La posizione viene salvata solo su questo telefono.</string>
+    <string name="error_location">Posizione non disponibile.</string>
+    <string name="expand">Mostra</string>
+    <string name="collapse">Nascondi</string>
+    <string name="community_rules_title">Regole della mappa condivisa</string>
+    <string name="community_rules_accept">Accetto le regole della mappa condivisa</string>
+    <string-array name="community_rules">
+        <item>Solo trifogli e quadrifogli: niente persone, volti, case o targhe.</item>
+        <item>Niente giardini privati o luoghi dove non si può entrare.</item>
+        <item>Niente ritrovamenti falsi, pubblicità o contenuti offensivi.</item>
+        <item>I pin segnalati da tre persone vengono rimossi.</item>
+    </string-array>
+    <string name="camera_hint_move_closer">Avvicinati: i trifogli sembrano troppo piccoli</string>
+    <string name="camera_hint_move_back">Allontanati un po’ per vedere più prato</string>
+    <string name="search_size_guide">Area del quadrifoglio</string>
+    <string name="search_fps">AI: %1$.1f fps</string>
+    <string name="settings_resolution_title">Risoluzione della ricerca</string>
+    <string name="settings_resolution_intro">Scegli il flusso della fotocamera analizzato dall’AI. Durante la ricerca vedi la risoluzione effettiva e gli fps dell’AI. L’anteprima può essere più fluida. La fotocamera usa la misura supportata più vicina.</string>
+    <string name="resolution_standard">Standard</string>
+    <string name="resolution_standard_hint">Meno elaborazione, con il trifoglio inquadrato da vicino.</string>
+    <string name="resolution_high">Alta</string>
+    <string name="resolution_high_hint">Più dettaglio; la velocità di analisi dipende dal telefono e dalle condizioni.</string>
+    <string name="resolution_max">Dettaglio 4:3</string>
+    <string name="resolution_max_hint">Più pixel del Full HD, nel formato 4:3 del sensore. Richiede più elaborazione.</string>
+    <string name="resolution_full_hd">Full HD</string>
+    <string name="resolution_full_hd_hint">Predefinita · 16:9. Un equilibrio tra dettaglio e velocità di analisi.</string>
+    <string name="resolution_camera_max">Massima fotocamera</string>
+    <string name="resolution_camera_max_hint">La risoluzione più alta compatibile con anteprima, analisi AI e foto. Può rallentare l’analisi; non è la modalità megapixel del sensore.</string>
+    <string name="search_no_clover_to_save">Ora non rilevo trifogli. Inquadrane uno prima di salvare.</string>
+    <string name="search_save_requires_clover">Inquadra un trifoglio per abilitare il salvataggio.</string>
+    <string name="camera_zoom_in">Aumenta zoom</string>
+    <string name="camera_zoom_out">Riduci zoom</string>
+    <string name="camera_zoom_ratio">%1$.1f×</string>
+    <string name="camera_zoom_error">Non riesco a cambiare lo zoom. Riprova.</string>
+    <string name="camera_start_error">Non riesco ad avviare la fotocamera. Prova una risoluzione più bassa nelle impostazioni.</string>
+    <string name="search_model_confidence">Confidenza AI: %1$d%%</string>
+    <string name="search_check_leaves">Controlla le quattro foglie: l’AI può sbagliarsi.</string>
+    <string name="info_model_photo_credits">Crediti delle foto di addestramento</string>
+</resources>

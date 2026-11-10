@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="camera_preparing">Préparation de la caméra…</string>
+    <string name="camera_hint_more_light">Cherchez un peu plus de lumière</string>
+    <string name="camera_hint_hold_still">Gardez le téléphone immobile</string>
+    <string name="search_four_leaf_possible">Trèfle à quatre feuilles possible. Approche-toi et reste immobile.</string>
+    <string name="search_four_leaf_confirmed">Trèfle à quatre feuilles possible · détection stable</string><string name="search_four_leaf_confirmed_many">%1$d trèfles à quatre feuilles possibles · détections stables</string>
+    <string name="search_clover_patch">Vous êtes au bon endroit. Continuez à chercher.</string>
+    <string name="search_ai_on_device">Recherche IA sur le téléphone</string>
+    <string name="search_demo_mode">Mode démo</string>
+    <string name="search_model_unavailable">Modèle indisponible : mode démo</string>
+    <string name="search_taking_photo">Photo en cours…</string>
+    <string name="search_save_finding">Enregistrer la découverte</string>
+    <string-array name="search_encouragements">
+        <item>Cherchez encore… la chance se cache parmi les feuilles.</item>
+        <item>Continuez : le prochain sera peut-être le bon.</item>
+        <item>Prenez votre temps, feuille après feuille.</item>
+        <item>La chance sourit à ceux qui continuent.</item>
+        <item>Approchez-vous et changez doucement angle.</item>
+    </string-array>
+<string name="nav_search">Chercher</string><string name="nav_findings">Trouvailles</string><string name="nav_map">Carte</string><string name="nav_profile">Profil</string>
+    <string name="language_button">Langue : %1$s</string><string name="language_dialog_title">Langue de l’application</string><string name="language_system">Langue de l’appareil</string><string name="language_english">English</string><string name="language_italian">Italiano</string><string name="language_french">Français</string><string name="language_german">Deutsch</string><string name="language_spanish">Español</string><string name="close">Fermer</string>
+    <string name="profile_title">Votre carnet porte-bonheur</string><string name="profile_description">Cherchez et enregistrez sans compte. Connectez-vous seulement pour voir la carte partagée et y publier, ou pour envoyer une suggestion.</string><string name="profile_privacy">Le partage est anonyme : vœux et positions précises ne quittent jamais votre appareil. Une photo n’est partagée que si vous le choisissez, recadrée sur les trèfles et sans données GPS.</string><string name="sign_in_google">Se connecter avec Google</string><string name="signing_in">Connexion…</string><string name="account_connected">Compte connecté</string><string name="sign_out">Se déconnecter</string><string name="error_sign_in">Échec de la connexion. Réessayez.</string><string name="error_sign_out">Échec de la déconnexion. Réessayez.</string>
+    <string name="gallery_empty_title">La chance laisse des traces</string><string name="gallery_empty_description">Cadrez une zone de trèfles et enregistrez ici chaque découverte. Photos et souhaits restent disponibles hors ligne.</string><string name="private_by_default">Privé par défaut</string><string name="start_search">Commencer la recherche</string><string name="gallery_title">Votre carnet porte-bonheur</string><plurals name="finding_count"><item quantity="one">%1$d trouvaille conservée sur cet appareil</item><item quantity="other">%1$d trouvailles conservées sur cet appareil</item></plurals>
+    <string name="wish_prefix">Souhait : %1$s</string><string name="corrected_prefix">Corrigé : %1$s</string><string name="type_four_leaf_clover">Trèfle à quatre feuilles</string><string name="type_clover_patch">Zone de trèfles</string><string name="sync_local_only">Uniquement sur cet appareil</string><string name="sync_pending">En attente de synchronisation</string><string name="sync_synced">Synchronisé</string><string name="sync_failed">Erreur de synchronisation</string>
+    <string name="wish_optional">Votre souhait (facultatif)</string><string name="classification">Classification</string><string name="shared_map">Carte partagée</string><string name="sharing_privacy_detail">Seront partagés le type reconnu par le classificateur et une zone arrondie d’environ 150 m, ainsi que, si vous le choisissez, un recadrage de la photo sans données GPS. Vœux, identité et coordonnées précises restent sur votre appareil.</string><string name="finding_without_location">Cette trouvaille n’a pas de position et ne peut pas être partagée.</string><string name="sign_in_to_share">Se connecter pour partager</string><string name="sharing_private">Privé</string><string name="sharing_pending">Publication…</string><string name="sharing_anonymous">Partagé anonymement</string><string name="sharing_failed">Échec de la publication</string><string name="error_operation">Échec de l’opération. Réessayez.</string><string name="error_publish_limit">Vous avez déjà partagé le nombre maximal de trouvailles pour aujourd’hui. Réessayez demain.</string><string name="error_save">Échec de l’enregistrement. Vérifiez la connexion et réessayez.</string><string name="saving">Enregistrement…</string><string name="save">Enregistrer</string><string name="delete">Supprimer</string><string name="back">Retour</string>
+    <string name="map_private_title">Votre carte porte-bonheur</string><string name="map_shared_title">La carte partagée</string><string name="map_private_subtitle">Chaque point reste disponible même hors ligne.</string><string name="map_shared_subtitle">Zones anonymes signalées par la communauté, jamais de positions précises.</string><string name="map_tab_mine">Les miens</string><string name="map_tab_shared">Partagés</string><plurals name="clover_count"><item quantity="one">%1$d trèfle</item><item quantity="other">%1$d trèfles</item></plurals><plurals name="patch_count"><item quantity="one">%1$d zone</item><item quantity="other">%1$d zones</item></plurals><plurals name="confirmation_count"><item quantity="one">%1$d confirmation</item><item quantity="other">%1$d confirmations</item></plurals>
+    <string name="map_local_name">Carte locale</string><string name="map_offline_note">Fond schématique • aucune donnée consommée</string><string name="map_gesture_hint">Pincez pour zoomer • faites glisser pour déplacer • touchez deux fois pour réinitialiser</string><string name="map_filter_content_description">Filtrer les trouvailles</string><string name="map_sign_in_title">Découvrez les zones chanceuses</string><string name="map_sign_in_description">Connectez-vous uniquement pour consulter et enrichir la carte anonyme. Votre carte privée reste disponible sans compte.</string><string name="sign_in_continue">Se connecter pour continuer</string><string name="error_shared_map">La carte partagée est indisponible. Vérifiez la connexion et réessayez.</string><string name="map_no_recent_pins">Aucun repère récent</string><string name="map_first_shared_pin">Partagez une trouvaille pour inaugurer la carte.</string><string name="map_zone_summary">Zone d’environ %1$d m • %2$s</string><string name="map_published_by_you">Publié par vous</string><string name="map_already_confirmed">Vous avez déjà confirmé ce repère</string><string name="map_confirming">Confirmation…</string><string name="map_confirm_still_there">Confirmer que la zone existe encore</string>
+    <string name="map_privacy_note">Épingles anonymes et arrondies. Les photos sont des recadrages sans données GPS ; vœux et identités ne sont jamais affichés.</string><string name="map_private_accessibility">Carte hors ligne avec %1$d trèfles à quatre feuilles et %2$d zones de trèfles. Touchez un point pour l’ouvrir.</string><string name="map_shared_accessibility">Carte partagée anonyme avec %1$d zones, dont %2$d récentes. Touchez un point pour les détails.</string><string name="shared_type_four_leaf">Zone de trèfles à quatre feuilles</string><string name="freshness_fresh">Récent</string><string name="freshness_fading">À reconfirmer</string><string name="freshness_stale">Ancien</string><string name="map_empty_title">La carte attend sa première trouvaille</string><string name="map_empty_description">Cherchez une zone ou un trèfle à quatre feuilles : la position précise reste sur votre appareil.</string>
+    <string name="location_dialog_title">Enregistrer le lieu ?</string><string name="location_dialog_text">La position place la trouvaille sur votre carte et reste sur cet appareil. Vous pouvez continuer sans autoriser l’accès. Sur les anciennes versions d’Android, l’accès aux photos est aussi nécessaire pour copier l’image dans la galerie.</string><string name="allow">Autoriser</string><string name="continue_without">Continuer sans</string><string name="error_photo">Échec de la photo. Réessayez.</string><string name="confirm_finding">Confirmer la trouvaille</string><string name="type_patch_short">Zone</string><string name="wish_short_optional">Souhait (facultatif)</string><string name="location_private_note">La position est enregistrée uniquement sur cet appareil.</string><string name="confirm">Confirmer</string><string name="cancel">Annuler</string><string name="camera_permission_description">La caméra sert à chercher des trèfles à quatre feuilles en temps réel.</string><string name="camera_permission_button">Autoriser la caméra</string>
+    <string name="error_shared_map_update">Impossible de mettre à jour la carte partagée.</string><string name="error_confirmation">Échec de la confirmation ou confirmation déjà envoyée par ce compte.</string>    <string name="map_zoom_in">Agrandir</string><string name="map_zoom_out">Réduire</string><string name="map_zoom_reset">Réinitialiser le zoom</string>
+    <string name="map_online_name">Carte avec villes et rues</string>
+    <string name="map_online_note">Une connexion Internet est nécessaire</string>
+    <string name="map_online_privacy_note">Le fournisseur de la carte peut connaître la zone consultée, mais ne voit ni vos trouvailles ni vos informations personnelles.</string>
+    <string name="map_no_private_pins_overlay">Aucun lieu enregistré — vous pouvez tout de même explorer la carte</string>
+    <string name="map_shared_date">Date de la source : %1$s</string>
+    <string name="map_report_pin">Signaler comme inadapté</string>
+    <string name="map_report_title">Pourquoi ce repère est-il inadapté ?</string>
+    <string name="map_report_explanation">Choisissez le motif. Si le lieu n’existe simplement plus, utilisez plutôt « Ce n’est plus là ».</string>
+    <string name="map_report_not_relevant">Ne concerne pas les trèfles ou une zone de trèfles</string>
+    <string name="map_report_false_information">Informations fausses ou trompeuses</string>
+    <string name="map_report_offensive">Spam ou contenu offensant</string>
+    <string name="map_reporting">Envoi du signalement…</string>
+    <string name="map_report_sent">Signalement envoyé</string>
+    <string name="error_report">Impossible d’envoyer le signalement. Vérifiez la connexion et réessayez.</string>
+    <string name="map_mark_gone">Ce n’est plus là</string>
+    <string name="map_marking_gone">Envoi…</string>
+    <string name="map_gone_sent">Vous avez signalé que ce n’est plus là</string>
+    <string name="map_gone_title">Plus rien ici ?</string>
+    <string name="map_gone_explanation">Utilisez ceci si le pré ou les trèfles ne sont plus là. Quand deux personnes différentes le signalent, l’épingle disparaît de la carte. Personne ne voit qui l’a signalé.</string>
+    <string name="map_gone_confirm">Oui, ce n’est plus là</string>
+    <string name="map_gone_one">Une personne dit que ce n’est plus là.</string>
+    <string name="error_mark_gone">Le signalement n’a pas pu être envoyé. Vérifiez la connexion et réessayez.</string>
+    <string name="share_checking">Vérification de la photo…</string>
+    <string name="share_review_title">Vérifiez ce que vous partagez</string>
+    <string name="share_review_type">Sur la carte partagée : %1$s</string>
+    <string name="share_downgraded">Le classificateur ne reconnaît pas de trèfle à quatre feuilles sur cette photo : il apparaîtra comme un pré de trèfles. Votre propre classement ne change pas.</string>
+    <string name="share_review_text">Seul ce recadrage autour des trèfles est publié, sans coordonnées GPS ni autre donnée de la photo. Vérifiez qu’aucune maison, plaque, personne ou lieu reconnaissable n’est visible.</string>
+    <string name="share_with_photo">Partager avec la photo</string>
+    <string name="share_without_photo">Partager sans la photo</string>
+    <string name="error_share_no_clover">Le classificateur ne voit pas de trèfles sur cette photo : elle ne peut pas être partagée.</string>
+    <string name="error_share_model_unavailable">Le classificateur n’est pas disponible : le partage est impossible pour le moment.</string>
+    <string name="error_share_photo_unreadable">Impossible de lire la photo.</string>
+    <string name="error_type_not_confirmed">Enregistré. Sur la carte partagée, cela reste un pré de trèfles : le classificateur ne voit pas de trèfle à quatre feuilles sur cette photo.</string>
+    <string name="feedback_button">Envoyer une suggestion</string>
+    <string name="feedback_title">Aidez-nous à nous améliorer</string>
+    <string name="feedback_idea">Idée</string>
+    <string name="feedback_problem">Problème</string>
+    <string name="feedback_detection">Mauvaise détection</string>
+    <string name="feedback_question_idea">Qu’est-ce qui vous a manqué aujourd’hui ? Que voudriez-vous que l’application fasse ?</string>
+    <string name="feedback_question_problem">Que s’est-il passé, et qu’attendiez-vous à la place ?</string>
+    <string name="feedback_question_detection">Qu’a-t-elle mal reconnu ? Un trèfle à quatre feuilles manqué, un trèfle à trois pris pour quatre, autre chose ?</string>
+    <string name="feedback_contact">Contact pour une réponse (facultatif)</string>
+    <string name="feedback_privacy">Votre message parvient à l’équipe sans votre nom. Votre compte sert seulement à limiter le spam. Laissez un contact seulement si vous voulez une réponse.</string>
+    <string name="feedback_send">Envoyer</string>
+    <string name="feedback_sending">Envoi…</string>
+    <string name="feedback_thanks_title">Merci !</string>
+    <string name="feedback_thanks">Nous lisons chaque message. Des idées comme la vôtre décident de ce que nous construisons ensuite.</string>
+    <string name="feedback_sign_in">Connectez-vous pour envoyer une suggestion : cela évite le spam. Votre nom n’est pas joint au message.</string>
+    <string name="feedback_limit">Vous avez envoyé le nombre maximal de messages pour aujourd’hui. Réessayez demain.</string>
+    <string name="error_feedback">Le message n’a pas pu être envoyé. Vérifiez la connexion et réessayez.</string>
+    <string name="captured_photo_description">La photo qui sera enregistrée</string>
+    <string name="info_button">Infos et confidentialité</string>
+    <string name="info_title">Infos et confidentialité</string>
+    <string name="info_privacy_title">La confidentialité en bref</string>
+    <string name="info_privacy_summary">L’image de la caméra est analysée sur votre téléphone et n’est jamais envoyée. Photos, vœux et positions précises restent sur cet appareil ; chaque photo est aussi enregistrée dans votre galerie. Vous pouvez chercher et enregistrer sans compte. Seulement quand vous choisissez de partager une trouvaille, la carte partagée reçoit son type, une zone arrondie d’environ 150 m et, si vous le choisissez, un recadrage de la photo sans données GPS. Les autres utilisateurs ne voient jamais qui l’a publiée ; l’administrateur du projet peut relier une épingle à son compte. Pas de publicité, pas d’analytics. Vous pouvez retirer ce que vous avez partagé, ou supprimer votre compte, à tout moment.</string>
+    <string name="info_privacy_full">Lire la politique de confidentialité complète</string>
+    <string name="info_contacts_title">Contact</string>
+    <string name="info_contacts_text">Idées, problèmes ou un trèfle mal reconnu : écrivez-nous, nous lisons chaque message.</string>
+    <string name="info_contact_email">Écrire à %1$s</string>
+    <string name="info_licenses_title">Licences et crédits</string>
+    <string name="info_version">Version %1$s</string>
+    <string name="delete_account_title">Supprimer le compte et les données</string>
+    <string name="delete_account_text">Retire de la carte partagée toutes les trouvailles que vous avez partagées, photos comprises, reprend vos confirmations et signalements et supprime votre compte. Les trouvailles enregistrées sur ce téléphone restent ici.</string>
+    <string name="delete_account_button">Supprimer le compte</string>
+    <string name="delete_account_confirm_text">Cette action est irréversible. Vos épingles partagées et leurs photos seront retirées et votre compte supprimé. Il peut vous être demandé de choisir à nouveau votre compte Google pour confirmer.</string>
+    <string name="delete_account_confirm">Supprimer définitivement</string>
+    <string name="deleting_account">Suppression…</string>
+    <string name="error_delete_account">Le compte n’a pas pu être supprimé. Vérifiez la connexion et réessayez.</string>
+    <string name="account_deleted">Votre compte et vos trouvailles partagées ont été supprimés. Les trouvailles enregistrées sur ce téléphone sont toujours là.</string>
+    <string name="did_you_know">Le saviez-vous ?</string>
+    <string name="another_fact">Une autre</string>
+    <string name="preserve_button">Comment le conserver</string>
+    <string name="preserve_title">Conserver votre trèfle à quatre feuilles</string>
+    <string name="preserve_tips_title">Conseils</string>
+    <string-array name="clover_facts">
+        <item>Dans un comptage d’environ 5,7 millions de trèfles dans six pays européens, environ 1 sur 5 000 avait quatre feuilles : deux fois plus que le fameux « 1 sur 10 000 ».</item>
+        <item>Le trèfle à quatre feuilles n’est pas une espèce à part : c’est en général un trèfle blanc (Trifolium repens) qui a poussé avec une foliole de plus.</item>
+        <item>En 2010, des chercheurs de l’université de Géorgie ont localisé le gène lié aux quatre feuilles. Il est masqué par celui des trois feuilles, et la lumière et la température décident si la quatrième apparaît.</item>
+        <item>L’une des premières mentions écrites date de 1620 : John Melton écrivait que celui qui trouve dans les champs une « herbe à quatre feuilles » trouvera bientôt « quelque chose de bon ».</item>
+        <item>Le shamrock irlandais a trois feuilles, pas quatre. Des enquêtes de 1893 et 1988 n’ont trouvé aucune espèce « véritable » : on cueillait surtout le trèfle douteux et le trèfle blanc.</item>
+        <item>Selon la tradition, saint Patrick utilisa le shamrock à trois feuilles pour expliquer la Trinité — mais le récit n’apparaît par écrit qu’en 1726, plus de mille ans après.</item>
+        <item>Selon la tradition, les quatre feuilles représentent la foi, l’espérance, l’amour et la chance.</item>
+        <item>Selon une légende, Ève emporta un trèfle à quatre feuilles en quittant le jardin d’Éden, en souvenir du Paradis.</item>
+        <item>Dans le folklore britannique et irlandais, porter un trèfle à quatre feuilles permet de voir les fées et de déjouer leurs sortilèges.</item>
+        <item>En Allemagne, on offre du « Glücksklee » au Nouvel An. Ce n’est pas un vrai trèfle mais Oxalis tetraphylla, une plante aux feuilles toujours à quatre lobes.</item>
+        <item>Le record Guinness du trèfle aux plus nombreuses feuilles est de 63, établi par Yoshiharu Watanabe au Japon en 2023.</item>
+        <item>En japonais, le trèfle blanc s’appelle « shirotsumekusa », « herbe blanche d’emballage » : à l’époque d’Edo, le trèfle séché protégeait la verrerie hollandaise expédiée à Nagasaki.</item>
+    </string-array>
+    <string-array name="preserve_steps">
+        <item>Pressez-le le plus tôt possible, dans les quelques heures. En attendant, gardez-le à plat dans du papier plié, pas dans une poche.</item>
+        <item>S’il est humide de rosée ou de pluie, séchez-le en tamponnant doucement.</item>
+        <item>Étalez bien les folioles entre deux feuilles absorbantes (papier buvard, filtre à café ou papier sulfurisé). Évitez le contact avec les pages : l’encre et le papier acide peuvent le tacher.</item>
+        <item>Refermez-le au milieu d’un livre lourd et ajoutez du poids par-dessus. Une presse à fleurs est encore mieux.</item>
+        <item>Changez le papier absorbant chaque jour les premiers jours, puis tous les quelques jours, pour éviter moisissure et noircissement.</item>
+        <item>Laissez-le sous presse dans un endroit sec pendant 1 à 3 semaines, jusqu’à ce qu’il soit complètement sec et rigide.</item>
+        <item>Protégez-le seulement une fois bien sec : plastifiez-le, encadrez-le sous verre ou gardez-le dans une pochette transparente.</item>
+    </string-array>
+    <string-array name="preserve_tips">
+        <item>Tenez-le à l’abri du soleil : le vert pâlit de toute façon avec le temps, mais la lumière accélère le processus. La plastification conserve le mieux la couleur.</item>
+        <item>Scellez-le seulement quand il est complètement sec, sinon il se voile sous le plastique ou le verre.</item>
+        <item>La méthode rapide au micro-ondes existe, mais elle surchauffe facilement et un livre au micro-ondes est risqué : la presse lente est plus sûre.</item>
+    </string-array>
+    <string name="settings_title">Réglages</string>
+    <string name="settings_find_title">Quand vous trouvez un trèfle à quatre feuilles</string>
+    <string name="settings_sound">Son</string>
+    <string name="settings_sound_hint">Un court carillon. Il suit le volume multimédia du téléphone.</string>
+    <string name="settings_vibration">Vibration</string>
+    <string name="settings_vibration_hint">Une brève vibration, pour le remarquer même sans son.</string>
+    <string name="settings_sensitivity_title">Sensibilité de la recherche</string>
+    <string name="settings_sensitivity_intro">À quel point l’application doit être sûre avant d’annoncer un trèfle à quatre feuilles. Chaque trèfle est toujours affiché par un léger carré.</string>
+    <string name="sensitivity_careful">Prudente</string>
+    <string name="sensitivity_careful_hint">Moins de fausses alertes : un peu plus lent, peut en manquer un.</string>
+    <string name="sensitivity_normal">Normale</string>
+    <string name="sensitivity_normal_hint">L’équilibre recommandé.</string>
+    <string name="sensitivity_sensitive">Sensible</string>
+    <string name="sensitivity_sensitive_hint">En trouve plus, mais annonce aussi des trèfles qui n’ont que trois feuilles.</string>
+    <string name="share_with_friends">Partager avec des amis</string>
+    <string name="share_chooser_title">Partagez votre chance</string>
+    <string name="share_text_four_leaf">J’ai trouvé un trèfle à quatre feuilles ! ☘ Cherche toi aussi la chance avec %1$s : %2$s</string>
+    <string name="share_text_patch">J’ai trouvé un pré de trèfles ! ☘ Aide-moi à chercher la chance, installe toi aussi %1$s : %2$s</string>
+    <string name="share_card_footer">Trouvé avec Lucky Prospector</string>
+    <string name="error_share_card">Impossible de préparer l’image.</string>
+    <string-array name="lucky_wishes">
+        <item>Que cette petite feuille t’apporte un grand sourire.</item>
+        <item>La chance t’a trouvé aujourd’hui. Garde-la près de toi.</item>
+        <item>Quatre feuilles, quatre belles choses en chemin.</item>
+        <item>Que ton prochain pas soit aussi chanceux que celui-ci.</item>
+        <item>Un peu de chance verte, rien que pour toi.</item>
+        <item>Que la journée reste aussi lumineuse que cette trouvaille.</item>
+        <item>Tu as bien regardé, et la chance t’a regardé.</item>
+        <item>Que les bonnes nouvelles te trouvent aussi facilement que tu l’as trouvé.</item>
+        <item>De la patience, un œil attentif et un brin de magie.</item>
+        <item>Que ce trèfle te rappelle que les choses rares arrivent.</item>
+        <item>La chance aime ceux qui continuent de chercher.</item>
+        <item>Un sur des milliers, un peu comme toi.</item>
+        <item>Que tes vœux poussent comme le trèfle au printemps.</item>
+        <item>Une feuille chanceuse pour une journée chanceuse.</item>
+        <item>Que cette trouvaille t’apporte sérénité et bonne compagnie.</item>
+        <item>Garde-le dans un livre, et dans ta mémoire.</item>
+        <item>Puisses-tu toujours trouver ce que tu cherches.</item>
+        <item>Aujourd’hui, le pré t’a choisi.</item>
+        <item>Que la chance marche à tes côtés sur chaque chemin.</item>
+        <item>Petite feuille, grand vœu.</item>
+        <item>Que ce trèfle porte ton vœu un peu plus loin.</item>
+        <item>À d’autres jours chanceux comme celui-ci.</item>
+        <item>Puisses-tu partager cette chance avec ceux que tu aimes.</item>
+        <item>Le vert pour l’espoir, quatre pour la chance.</item>
+        <item>Que les petites surprises ne s’arrêtent jamais.</item>
+        <item>Trouvé par toi, souhaité à tous.</item>
+        <item>Que ton cœur soit léger comme cette feuille.</item>
+        <item>Chaque trèfle est une petite raison de sourire.</item>
+        <item>Que ce soit le début d’une série chanceuse.</item>
+        <item>La chance est discrète. Tu l’as remarquée.</item>
+    </string-array>
+    <string name="add_manually">Ajouter à la main</string>
+    <string name="manual_title">Ajouter une trouvaille</string>
+    <string name="manual_pick_photo">Choisir une photo</string>
+    <string name="manual_change_photo">Changer de photo</string>
+    <string name="manual_date">Date : %1$s</string>
+    <string name="manual_location_title">Où l’avez-vous trouvé ?</string>
+    <string name="location_from_photo">Position enregistrée dans la photo</string>
+    <string name="location_current">Ma position actuelle</string>
+    <string name="location_address">Chercher une adresse ou un parc</string>
+    <string name="location_none">Sans position</string>
+    <string name="locating">Recherche de votre position…</string>
+    <string name="address_hint">Adresse ou nom du parc</string>
+    <string name="address_search">Chercher</string>
+    <string name="address_searching">…</string>
+    <string name="address_no_results">Aucun lieu trouvé. Essayez d’ajouter la ville.</string>
+    <string name="address_privacy">La recherche passe par le service de localisation du téléphone (en général Google). La position n’est enregistrée que sur ce téléphone.</string>
+    <string name="error_location">Position non disponible.</string>
+    <string name="expand">Afficher</string>
+    <string name="collapse">Masquer</string>
+    <string name="community_rules_title">Règles de la carte partagée</string>
+    <string name="community_rules_accept">J\'accepte les règles de la carte partagée</string>
+    <string-array name="community_rules">
+        <item>Uniquement des trèfles : pas de personnes, visages, maisons ou plaques d\'immatriculation.</item>
+        <item>Pas de jardins privés ni de lieux où l\'on ne peut pas entrer.</item>
+        <item>Pas de fausses trouvailles, de publicité ni de contenus offensants.</item>
+        <item>Les pins signalés par trois personnes sont retirés.</item>
+    </string-array>
+    <string name="camera_hint_move_closer">Rapprochez-vous : les trèfles paraissent trop petits</string>
+    <string name="camera_hint_move_back">Reculez un peu pour voir plus de pelouse</string>
+    <string name="search_size_guide">Taille du trèfle</string>
+    <string name="search_fps">IA : %1$.1f fps</string>
+    <string name="settings_resolution_title">Résolution de la recherche</string>
+    <string name="settings_resolution_intro">Choisis le flux de caméra analysé par l’IA. La recherche affiche la résolution réelle et les fps de l’IA. L’aperçu peut être plus fluide. La caméra utilise la taille compatible la plus proche.</string>
+    <string name="resolution_standard">Standard</string>
+    <string name="resolution_standard_hint">Moins de traitement, avec le trèfle cadré de près.</string>
+    <string name="resolution_high">Haute</string>
+    <string name="resolution_high_hint">Plus de détails ; la vitesse dépend du téléphone et des conditions.</string>
+    <string name="resolution_max">Détail 4:3</string>
+    <string name="resolution_max_hint">Plus de pixels que le Full HD, au format 4:3 du capteur. Demande plus de traitement.</string>
+    <string name="resolution_full_hd">Full HD</string>
+    <string name="resolution_full_hd_hint">Par défaut · 16:9. Équilibre entre détail et vitesse d’analyse.</string>
+    <string name="resolution_camera_max">Maximum de la caméra</string>
+    <string name="resolution_camera_max_hint">Résolution la plus élevée compatible avec aperçu, analyse IA et photos simultanés. Peut ralentir l’analyse ; ce n’est pas le mode mégapixels du capteur.</string>
+    <string name="search_no_clover_to_save">Aucun trèfle détecté pour le moment. Cadre un trèfle avant d’enregistrer.</string>
+    <string name="search_save_requires_clover">Cadre un trèfle pour activer l’enregistrement.</string>
+    <string name="camera_zoom_in">Zoom avant</string>
+    <string name="camera_zoom_out">Zoom arrière</string>
+    <string name="camera_zoom_ratio">%1$.1f×</string>
+    <string name="camera_zoom_error">Impossible de modifier le zoom. Réessaie.</string>
+    <string name="camera_start_error">Impossible de démarrer la caméra. Essaie une résolution plus basse dans les paramètres.</string>
+    <string name="search_model_confidence">Confiance de l’IA : %1$d%%</string>
+    <string name="search_check_leaves">Vérifie les quatre feuilles : l’IA peut se tromper.</string>
+    <string name="info_model_photo_credits">Crédits des photos d’entraînement</string>
+</resources>

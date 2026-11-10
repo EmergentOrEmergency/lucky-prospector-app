@@ -1,0 +1,42 @@
+# Android / Gradle
+.gradle/
+**/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.iml
+*.hprof
+
+# IDE / OS
+.idea/
+.vs/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+google-services.json
+GoogleService-Info.plist
+secrets.properties
+
+# Signing material must never be committed
+*.jks
+*.keystore
+keystore.properties
+
+# ML artifacts and personal captures
+*.pt
+*.onnx
+*.tflite
+user-data/
+
+# Logs and generated reports
+*.log
+reports/generated/
+
+# The released model ships with the source
+!app/src/main/assets/models/lucky-prospector/model.tflite
